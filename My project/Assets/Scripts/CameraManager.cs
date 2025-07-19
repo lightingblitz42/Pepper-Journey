@@ -13,6 +13,6 @@ public class CameraManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rb.linearVelocity = (follow.transform.position - transform.position) * 1.4f;
+        rb.linearVelocity = (follow.transform.position - transform.position) * 3f;
     }
 }

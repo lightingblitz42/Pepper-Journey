@@ -279,7 +279,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.07924521, g: 0.075279154, b: 0.051883183, a: 0}
+  m_BackGroundColor: {r: 0.4640087, g: 0.4867924, b: 0.443624, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -304,7 +304,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 7.8
+  orthographic size: 9.97
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -4656,6 +4656,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9076124075677562145, guid: bf88da35c6978d74eaa11b8a85ddd894, type: 3}
+      propertyPath: Health
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9076124075677562145, guid: bf88da35c6978d74eaa11b8a85ddd894, type: 3}
       propertyPath: 'Spells.Array.data[0]'
       value: 
       objectReference: {fileID: 1148230171661192394, guid: 40f9fd4c04c6a924d915eea5a4c8e745, type: 3}
@@ -5065,17 +5069,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9076124075677562145, guid: bf88da35c6978d74eaa11b8a85ddd894, type: 3}
+      propertyPath: Health
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9076124075677562145, guid: bf88da35c6978d74eaa11b8a85ddd894, type: 3}
       propertyPath: 'Spells.Array.data[0]'
       value: 
-      objectReference: {fileID: 1148230171661192394, guid: 40f9fd4c04c6a924d915eea5a4c8e745, type: 3}
+      objectReference: {fileID: 590329826235726023, guid: e7e7f29ecfff9a94685e0afcc014e6af, type: 3}
     - target: {fileID: 9076124075677562145, guid: bf88da35c6978d74eaa11b8a85ddd894, type: 3}
       propertyPath: 'Spells.Array.data[1]'
       value: 
-      objectReference: {fileID: 1148230171661192394, guid: 40f9fd4c04c6a924d915eea5a4c8e745, type: 3}
+      objectReference: {fileID: 590329826235726023, guid: e7e7f29ecfff9a94685e0afcc014e6af, type: 3}
     - target: {fileID: 9076124075677562145, guid: bf88da35c6978d74eaa11b8a85ddd894, type: 3}
       propertyPath: 'Spells.Array.data[2]'
       value: 
-      objectReference: {fileID: 1148230171661192394, guid: 40f9fd4c04c6a924d915eea5a4c8e745, type: 3}
+      objectReference: {fileID: 590329826235726023, guid: e7e7f29ecfff9a94685e0afcc014e6af, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
