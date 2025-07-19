@@ -21,7 +21,7 @@ public class Bullet : MonoBehaviour
     {
         if(collision.tag == "Enemy")
         {
-            collision.GetComponent<Slime>().Health -= Random.Range(Mathf.Round(damage*1.5f),Mathf.Round(damage *.5f));
+            collision.GetComponent<Enemy>().Health -= Random.Range(Mathf.Round(damage*1.5f),Mathf.Round(damage *.5f));
             if(piercing == false)
             {
                 Destroy(gameObject);

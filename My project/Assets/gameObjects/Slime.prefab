@@ -105,7 +105,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Health: 3
   ed: {fileID: 2108226636585801134}
-  Player: {fileID: 0}
   rb: {fileID: 7366381550134570776}
   speed: 6
   attckTimer: 4
@@ -137,7 +136,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &4328429200453915331
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -230,6 +229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detectedFor: 0
+  Player: {fileID: 0}
 --- !u!58 &6692083118126351986
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -265,4 +265,4 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 14.011555
+  m_Radius: 9.21
