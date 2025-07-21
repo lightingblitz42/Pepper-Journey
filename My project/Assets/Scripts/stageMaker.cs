@@ -1,6 +1,7 @@
 using NUnit.Framework;
 using UnityEngine;
 using System.Collections.Generic;
+using System.Linq;
 
 public class stageMaker : MonoBehaviour
 {
@@ -28,7 +29,7 @@ public class stageMaker : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-       // connectRight(startLevel);
+        connectRight(island1Right[0]);
     }
 
     // Update is called once per frame
@@ -38,7 +39,7 @@ public class stageMaker : MonoBehaviour
     }
     public void ConnectIsland(Island nl)
     {
-        for(int i = 1; i < nl.Exits.Count; i++)
+        for(int i = 1; i < nl.Exits.Count + 1; i++)
         {
             if (i == 2)
             {
@@ -52,28 +53,51 @@ public class stageMaker : MonoBehaviour
     }
     public void connectRight(Island nl)
     {
-        if(island1Right.Count > 0)
+        if (island1Right.Count > 0)
         {
             int num = Random.Range(0, island1Right.Count - 1);
-            //island1Right[num].Exits[0].goTo = nl.Exits[3];
+            
+            island1Right[num].Exits[0].goTo = nl.teleportCamera[2].transform;
+            nl.Exits[2].goTo = island1Right[num].teleportCamera[0].transform;
+            Island hold = island1Right[num];
+            island1Right.RemoveAt(num);
+            ConnectIsland(hold);
         }
         else
         {
-
+            Debug.Log(island0Right.Count);
+            int num = Random.Range(0, island0Right.Count - 1);
+            island0Right[num].Exits[0].goTo = nl.teleportCamera[2].transform;
+            nl.Exits[2].goTo = island0Right[num].teleportCamera[0].transform;
+            island0Right.RemoveAt(num);
         }
     }
-    public void connectUp(Island nll)
+    public void connectUp(Island nl)
     {
-        if(ups == 4)
-        {
-
-        }else if(island0Up.Count > 0)
+        if (ups == 4)
         {
 
         }
+        else if (island1Up.Count > 0)
+        {
+            int num = Random.Range(0, island1Up.Count - 1);
+            if(nl.Exits[1] != null)
+            {
+                island1Up[num].Exits[0].goTo = nl.teleportCamera[1].transform;
+                nl.Exits[1].goTo = island1Up[num].teleportCamera[0].transform;
+                Island hold = island1Up[num];
+                island1Up.RemoveAt(num);
+                ConnectIsland(hold);
+                
+            }
+        }
         else
         {
-
+            Debug.Log(island0Up.Count + " " + nl.name);
+            int num = Random.Range(0, island0Up.Count - 1);
+            island0Up[num].Exits[0].goTo = nl.teleportCamera[1].transform;
+            nl.Exits[1].goTo = island0Up[num].teleportCamera[0].transform;
+            island0Up.RemoveAt(num);
         }
         ups++;
     }

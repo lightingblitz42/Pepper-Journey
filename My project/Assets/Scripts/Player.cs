@@ -6,7 +6,6 @@ public class Player : MonoBehaviour
     public GameObject follow;
     public float speed = 2;
 
-
     public bool dashDetected = false;
 
     public Animator animator;
@@ -37,8 +36,20 @@ public class Player : MonoBehaviour
         {
             if (dashing)
             {
-                Instantiate(DashAnimation, transform.position, Quaternion.identity);
-                rb.linearDamping = 9f;
+                
+                if(animator.GetInteger("Direction") == 0)
+                {
+                    Instantiate(DashAnimation, transform.position, Quaternion.Euler(0, 0, 0));
+                }
+                else if (animator.GetInteger("Direction") == 1)
+                {
+                    Instantiate(DashAnimation, transform.position, Quaternion.Euler(0, 0, 90));
+                }
+                else if (animator.GetInteger("Direction") == -1)
+                {
+                    Instantiate(DashAnimation, transform.position, Quaternion.Euler(0, 0, -90));
+                }
+                    rb.linearDamping = 9f;
                 dashing = false;
                 rb.linearVelocity = rb.linearVelocity / 7;
             }
