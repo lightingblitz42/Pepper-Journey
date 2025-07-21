@@ -37,6 +37,7 @@ public class Mage : Enemy
                 attckTimer = attackMax;
             }
         }
+        base.Update();
     }
 
     public IEnumerator Attack(GameObject spell, GameObject catalyst)

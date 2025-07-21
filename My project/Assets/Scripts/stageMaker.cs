@@ -28,7 +28,7 @@ public class stageMaker : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        connectRight(startLevel);
+       // connectRight(startLevel);
     }
 
     // Update is called once per frame
@@ -36,13 +36,46 @@ public class stageMaker : MonoBehaviour
     {
         
     }
+    public void ConnectIsland(Island nl)
+    {
+        for(int i = 1; i < nl.Exits.Count; i++)
+        {
+            if (i == 2)
+            {
+                connectUp(nl);
+            }
+            if(i == 3)
+            {
+                connectRight(nl);
+            }
+        }
+    }
     public void connectRight(Island nl)
     {
-       // nl.
-    }
-    public void connectUp(NextLevel nl)
-    {
+        if(island1Right.Count > 0)
+        {
+            int num = Random.Range(0, island1Right.Count - 1);
+            //island1Right[num].Exits[0].goTo = nl.Exits[3];
+        }
+        else
+        {
 
+        }
+    }
+    public void connectUp(Island nll)
+    {
+        if(ups == 4)
+        {
+
+        }else if(island0Up.Count > 0)
+        {
+
+        }
+        else
+        {
+
+        }
+        ups++;
     }
 
     public void StageOne(int index, List<GameObject> types, int amount)

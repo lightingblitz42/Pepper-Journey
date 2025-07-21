@@ -17,6 +17,8 @@ public class Player : MonoBehaviour
     public float DashMax = 1;
     public float CurrentDash = 0;
     public bool dashing = false;
+
+    public GameObject DashAnimation;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -35,6 +37,7 @@ public class Player : MonoBehaviour
         {
             if (dashing)
             {
+                Instantiate(DashAnimation, transform.position, Quaternion.identity);
                 rb.linearDamping = 9f;
                 dashing = false;
                 rb.linearVelocity = rb.linearVelocity / 7;
