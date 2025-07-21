@@ -19,9 +19,9 @@ public class NextLevel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        blackSc.color = new Color(0, 0, 0, blackScreen);
         if(blackScreen > 0 || ne == -1)
         {
+            blackSc.color = new Color(0, 0, 0, blackScreen);
             blackScreen -= Time.deltaTime * ne * 2;
             if(blackScreen > 1 && teleported == false)
             {

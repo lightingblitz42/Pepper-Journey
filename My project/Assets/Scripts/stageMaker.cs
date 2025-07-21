@@ -4,8 +4,18 @@ using System.Collections.Generic;
 
 public class stageMaker : MonoBehaviour
 {
+    public float ups = 0;
+
     public List<float> type = new List<float>();
     public float dif = 1;
+
+    public Island EndIsland;
+    public Island startLevel;
+
+    public List<Island> island1Up = new List<Island>();
+    public List<Island> island1Right = new List<Island>();
+    public List<Island> island0Up = new List<Island>();
+    public List<Island> island0Right = new List<Island>();
 
     public List<GameObject> TierOneSpells = new List<GameObject>();
     public List<GameObject> TierTwoSpells = new List<GameObject>();
@@ -18,7 +28,7 @@ public class stageMaker : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        connectRight(startLevel);
     }
 
     // Update is called once per frame
@@ -26,6 +36,15 @@ public class stageMaker : MonoBehaviour
     {
         
     }
+    public void connectRight(Island nl)
+    {
+       // nl.
+    }
+    public void connectUp(NextLevel nl)
+    {
+
+    }
+
     public void StageOne(int index, List<GameObject> types, int amount)
     {
         GameObject elite = Instantiate(types[(int)Random.Range(.9f, 3)], transform.position, Quaternion.identity);
