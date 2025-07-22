@@ -93,11 +93,14 @@ public class stageMaker : MonoBehaviour
         }
         else
         {
-            Debug.Log(island0Up.Count + " " + nl.name);
-            int num = Random.Range(0, island0Up.Count - 1);
-            island0Up[num].Exits[0].goTo = nl.teleportCamera[1].transform;
-            nl.Exits[1].goTo = island0Up[num].teleportCamera[0].transform;
-            island0Up.RemoveAt(num);
+            if (nl.Exits[1] != null)
+            {
+                Debug.Log(island0Up.Count + " " + nl.name);
+                int num = Random.Range(0, island0Up.Count - 1);
+                island0Up[num].Exits[0].goTo = nl.teleportCamera[1].transform;
+                nl.Exits[1].goTo = island0Up[num].teleportCamera[0].transform;
+                island0Up.RemoveAt(num);
+            }
         }
         ups++;
     }
