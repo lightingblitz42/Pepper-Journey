@@ -77,12 +77,12 @@ public class stageMaker : MonoBehaviour
     }
     public void connectUp(Island nl)
     {
-        if (ups == 4)
+        if (ups == 1)
         {
             if (nl.Exits[1] == null)
             {
-                ups -= 2;
                 connectUp(nl);
+                return;
             }
             else
             {
