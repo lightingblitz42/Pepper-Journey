@@ -26,7 +26,7 @@ public class Mage : Enemy
             Vector3 perpendicular = basesling.transform.position - transform.position;
             basesling.transform.rotation = Quaternion.LookRotation(Vector3.forward, perpendicular);
 
-
+            animator.SetBool("Casting", true);
             attckTimer -= Time.deltaTime;
             if (attckTimer < 0)
             {
@@ -36,6 +36,10 @@ public class Mage : Enemy
                 }
                 attckTimer = attackMax;
             }
+        }
+        else
+        {
+            animator.SetBool("Casting", false);
         }
         base.Update();
     }

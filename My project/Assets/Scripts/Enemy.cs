@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    public GameObject deathAnim;
+
+    public Animator animator;
     public float Health = 3;
     public enemyDetection ed;
     public Rigidbody2D rb;
@@ -26,6 +29,7 @@ public class Enemy : MonoBehaviour
 
     public void Death()
     {
+        Instantiate(deathAnim,transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 }
