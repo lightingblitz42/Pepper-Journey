@@ -126,32 +126,4 @@ public class stageMaker : MonoBehaviour
         }
         ups++;
     }
-
-    public void StageOne(int index, List<GameObject> types, int amount)
-    {
-        GameObject elite = Instantiate(types[(int)Random.Range(.9f, 3)], transform.position, Quaternion.identity);
-        for(int i = 0; i < Random.Range(2, 6); i++)
-        {
-            Mage mage = elite.GetComponent<Mage>();
-            float rand = Random.value;
-            if(rand > .9f)
-            {
-                mage.Spells.Add(TierThreeSpells[Random.Range(0, TierOneSpells.Count - 1)]);
-            }
-            else if(rand > .7f)
-            {
-                mage.Spells.Add(TierTwoSpells[Random.Range(0, TierTwoSpells.Count - 1)]);
-            }
-            else
-            {
-                mage.Spells.Add(TierOneSpells[Random.Range(0, TierThreeSpells.Count -1)]);
-            }
-
-        }
-        //for(int i = 0; i < amount; i++)
-        //{
-        //    Instantiate(types[(int)Random.Range(3.5f, types.Count - 1)], Camps[index].position, Quaternion.identity);
-        //}
-        
-    }
 }

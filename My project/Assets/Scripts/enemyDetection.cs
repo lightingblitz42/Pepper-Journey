@@ -20,7 +20,7 @@ public class enemyDetection : MonoBehaviour
         if (collision.tag == "Player")
         {
             Player = collision.gameObject;
-            detectedFor = 6;
+            detectedFor = 1;
         }
     }
 }

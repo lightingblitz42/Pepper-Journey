@@ -4,13 +4,27 @@ using UnityEngine;
 
 public class Spellform : MonoBehaviour
 {
+    public bool enemies = false;
+    public bool spawnOnPlayer = false;
+    public bool shake = false;
+
     public string enemyTag = "Enemy";
     public List<GameObject> go = new List<GameObject>();
     public float dtimer = 3;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        if (shake)
+        {
+            Camera.main.GetComponent<shake>().shakee();
+            Debug.Log("sha");
+        }
         
+        if (spawnOnPlayer && enemies)
+        {
+            Debug.Log("te");
+            transform.position = GameObject.FindGameObjectWithTag("Player").transform.position;
+        }
     }
 
     // Update is called once per frame
@@ -23,13 +37,6 @@ public class Spellform : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if(collision.tag == enemyTag)
-        {
-            die();
-        }
-    }
 
     public void die()
     {
@@ -37,5 +44,6 @@ public class Spellform : MonoBehaviour
         {
             Instantiate(go[i], transform.position, Quaternion.identity);
         }
+        Destroy(gameObject);
     }
 }

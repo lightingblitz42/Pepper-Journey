@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Mage : Enemy
 {
+    public stageMaker stageMaker;
     public GameObject basesling;
     public GameObject spellSling;
 
@@ -15,7 +16,23 @@ public class Mage : Enemy
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        attackMax = Random.Range(.3f, 3);
+        attckTimer = attackMax;
+        for (int i = 0; i < Random.Range(2, 5); i++)
+        {
+            if(Random.value > .5f)
+            {
+                Spells.Add(stageMaker.TierOneSpells[Random.Range(0, stageMaker.TierOneSpells.Count)]);
+            }
+            else if (Random.value > .3f)
+            {
+                Spells.Add(stageMaker.TierTwoSpells[Random.Range(0, stageMaker.TierTwoSpells.Count)]);
+            }
+            else if (Random.value > 0)
+            {
+                Spells.Add(stageMaker.TierThreeSpells[Random.Range(0, stageMaker.TierThreeSpells.Count)]);
+            }
+        }
     }
 
     // Update is called once per frame
@@ -26,13 +43,13 @@ public class Mage : Enemy
             Vector3 perpendicular = basesling.transform.position - transform.position;
             basesling.transform.rotation = Quaternion.LookRotation(Vector3.forward, perpendicular);
 
-            animator.SetBool("Casting", true);
+           // animator.SetBool("Casting", true);
             attckTimer -= Time.deltaTime;
             if (attckTimer < 0)
             {
                 for (int i = 0; i < spellsPerShot; i++)
                 {
-                    StartCoroutine(Attack(Spells[Random.Range(0, Spells.Count - 1)], spellSling));
+                    StartCoroutine(Attack(Spells[Random.Range(0, Spells.Count)], spellSling));
                 }
                 attckTimer = attackMax;
             }
@@ -46,7 +63,10 @@ public class Mage : Enemy
 
     public IEnumerator Attack(GameObject spell, GameObject catalyst)
     {
-        yield return new WaitForSeconds(Charge);
-        Instantiate(spell, catalyst.transform.position, Quaternion.identity);
+        animator.SetBool("Casting", true);
+        yield return new WaitForSeconds(Random.Range(Charge, .3f));
+        animator.SetBool("Casting", false);
+        GameObject spellzz = Instantiate(spell, catalyst.transform.position, Quaternion.identity);
+        spellzz.GetComponent<Spellform>().enemies = true;
     }
 }

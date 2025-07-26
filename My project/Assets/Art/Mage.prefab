@@ -57,6 +57,7 @@ MonoBehaviour:
   attckTimer: 4
   attackMax: 4
   attacking: 0
+  stageMaker: {fileID: 0}
   basesling: {fileID: 1825699690985377384}
   spellSling: {fileID: 8383217934515627687}
   Spells:
@@ -277,9 +278,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4242351963343379969, guid: 8e9fca8bb178ddd4e94d1a5e02746ac1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6984230665721820523}
-    - targetCorrespondingSourceObject: {fileID: 4242351963343379969, guid: 8e9fca8bb178ddd4e94d1a5e02746ac1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 4750936501906993420}
   m_SourcePrefab: {fileID: 100100000, guid: 8e9fca8bb178ddd4e94d1a5e02746ac1, type: 3}
 --- !u!114 &3423646384285233216 stripped
 MonoBehaviour:
@@ -333,20 +331,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 2.41
---- !u!114 &4750936501906993420
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7408815271666897198}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20563da8ddff2ae40a8737f952c5b387, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  detectedFor: 0
-  Player: {fileID: 0}
 --- !u!4 &8355578856501826260 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3457146226313321979, guid: 8e9fca8bb178ddd4e94d1a5e02746ac1, type: 3}

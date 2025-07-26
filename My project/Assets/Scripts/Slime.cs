@@ -7,7 +7,10 @@ public class Slime : Enemy
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        attackMax = Random.Range(2.5f, 5);
+        attckTimer = attackMax;
+        float r = Random.Range(6f, 13f);
+        transform.localScale = new Vector3(r, r);
     }
 
     // Update is called once per frame
@@ -34,7 +37,9 @@ public class Slime : Enemy
     {
         rb.linearVelocity = (ed.Player.transform.position - transform.position).normalized * 16;
         attacking = true;
-        yield return new WaitForSeconds(2.5f);
+        animator.SetBool("Jump", true);
+        yield return new WaitForSeconds(2.2f);
+        animator.SetBool("Jump", false);
         attacking = false;
     }
 }

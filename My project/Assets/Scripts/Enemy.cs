@@ -29,7 +29,8 @@ public class Enemy : MonoBehaviour
 
     public void Death()
     {
-        Instantiate(deathAnim,transform.position, Quaternion.identity);
+        GameObject ded = Instantiate(deathAnim,transform.position, Quaternion.identity);
+        ded.transform.localScale = transform.localScale;
         Destroy(gameObject);
     }
 }
