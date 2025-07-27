@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public float health;
+
     public Rigidbody2D rb;
     public GameObject follow;
     public float speed = 2;
@@ -39,7 +41,14 @@ public class Player : MonoBehaviour
                 
                 if(animator.GetInteger("Direction") == 0)
                 {
-                    Instantiate(DashAnimation, transform.position, Quaternion.Euler(0, 0, 0));
+                    if(transform.localScale.x == -1)
+                    {
+                        Instantiate(DashAnimation, transform.position, Quaternion.Euler(0, 0, 180));
+                    }
+                    else
+                    {
+                        Instantiate(DashAnimation, transform.position, Quaternion.Euler(0, 0, 0));
+                    }
                 }
                 else if (animator.GetInteger("Direction") == 1)
                 {

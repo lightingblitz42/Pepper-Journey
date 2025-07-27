@@ -48,6 +48,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 051ad4a83f881cd409d546a3520f2b4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthBefore: 0
+  HurtText: {fileID: 174013435241155245, guid: 4a614189384a4014098e3d16f6de1fbd, type: 3}
   deathAnim: {fileID: 4242351963343379969, guid: 8e9fca8bb178ddd4e94d1a5e02746ac1, type: 3}
   animator: {fileID: 8356586059839846994}
   Health: 12
@@ -57,9 +59,11 @@ MonoBehaviour:
   attckTimer: 4
   attackMax: 4
   attacking: 0
+  tie: 0
   stageMaker: {fileID: 0}
   basesling: {fileID: 1825699690985377384}
   spellSling: {fileID: 8383217934515627687}
+  currentShot: 0
   Spells:
   - {fileID: 590329826235726023, guid: e7e7f29ecfff9a94685e0afcc014e6af, type: 3}
   - {fileID: 590329826235726023, guid: e7e7f29ecfff9a94685e0afcc014e6af, type: 3}

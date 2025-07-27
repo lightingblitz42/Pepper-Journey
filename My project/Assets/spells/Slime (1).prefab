@@ -65,6 +65,10 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6010947295233761041, guid: 5228f38557542214d99c9b30789e95b5, type: 3}
+      propertyPath: HurtText
+      value: 
+      objectReference: {fileID: 174013435241155245, guid: 4a614189384a4014098e3d16f6de1fbd, type: 3}
+    - target: {fileID: 6010947295233761041, guid: 5228f38557542214d99c9b30789e95b5, type: 3}
       propertyPath: scalePlus
       value: 0
       objectReference: {fileID: 0}

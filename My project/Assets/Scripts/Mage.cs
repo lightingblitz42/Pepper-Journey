@@ -64,8 +64,12 @@ public class Mage : Enemy
                 for (int i = 0; i < spellsPerShot; i++)
                 {
                     StartCoroutine(Attack(Spells[currentShot], spellSling, currentShot));
+                    currentShot++;
+                    if (currentShot >= Spells.Count)
+                    {
+                        currentShot = 0;
+                    }
                 }
-                currentShot++;
                 attckTimer = attackMax + tie;
                 tie = 0;
             }
