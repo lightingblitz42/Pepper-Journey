@@ -1,13 +1,18 @@
 using NUnit.Framework;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 
 public class Mage : Enemy
 {
+    public float tie = 0;
+
     public stageMaker stageMaker;
     public GameObject basesling;
     public GameObject spellSling;
+
+    public int currentShot = 0;
 
     public List<GameObject> Spells = new List<GameObject>();
     public float spellsPerShot = 1;
@@ -18,8 +23,13 @@ public class Mage : Enemy
     {
         attackMax = Random.Range(.3f, 3);
         attckTimer = attackMax;
+        if(Random.value > .6f)
+        {
+            Spells.Add(stageMaker.Modifiers[Random.Range(0,stageMaker.Modifiers.Count)]);
+        }
         for (int i = 0; i < Random.Range(2, 5); i++)
         {
+           
             if(Random.value > .5f)
             {
                 Spells.Add(stageMaker.TierOneSpells[Random.Range(0, stageMaker.TierOneSpells.Count)]);
@@ -38,6 +48,10 @@ public class Mage : Enemy
     // Update is called once per frame
     void Update()
     {
+        if(currentShot >= Spells.Count)
+        {
+            currentShot = 0;
+        }
         if (ed.detectedFor > 0)
         {
             Vector3 perpendicular = basesling.transform.position - transform.position;
@@ -49,9 +63,11 @@ public class Mage : Enemy
             {
                 for (int i = 0; i < spellsPerShot; i++)
                 {
-                    StartCoroutine(Attack(Spells[Random.Range(0, Spells.Count)], spellSling));
+                    StartCoroutine(Attack(Spells[currentShot], spellSling, currentShot));
                 }
-                attckTimer = attackMax;
+                currentShot++;
+                attckTimer = attackMax + tie;
+                tie = 0;
             }
         }
         else
@@ -61,12 +77,36 @@ public class Mage : Enemy
         base.Update();
     }
 
-    public IEnumerator Attack(GameObject spell, GameObject catalyst)
+    public IEnumerator Attack(GameObject spell, GameObject catalyst, int count)
     {
+        Spellform f = spell.GetComponent<Spellform>();
+        tie += f.cooldownChange;
         animator.SetBool("Casting", true);
         yield return new WaitForSeconds(Random.Range(Charge, .3f));
         animator.SetBool("Casting", false);
         GameObject spellzz = Instantiate(spell, catalyst.transform.position, Quaternion.identity);
-        spellzz.GetComponent<Spellform>().enemies = true;
+        Spellform sp = spellzz.GetComponent<Spellform>();
+        if(sp != null)
+        {
+            sp.enemies = true;
+            if (sp.prongMod)
+            {
+                count++;
+                while(count < Spells.Count)
+                {
+
+                    sp.go.Add(Spells[count]);
+                    if (count < Spells.Count)
+                    {
+                        Spellform d = Spells[count].GetComponent<Spellform>();
+                        if(d != null && !d.prongMod)
+                        {
+                            break;
+                        }
+                    }
+                    count++;
+                }
+            }
+        }
     }
 }

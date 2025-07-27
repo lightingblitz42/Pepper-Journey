@@ -4,19 +4,31 @@ using UnityEngine;
 
 public class Spellform : MonoBehaviour
 {
+    public float cooldownChange = 0;
+
+    public bool prongMod = false;
+
     public bool enemies = false;
     public bool spawnOnPlayer = false;
     public bool shake = false;
+    public float shakeAmount = 0;
+    public float shaketimer = .5f;
 
     public string enemyTag = "Enemy";
     public List<GameObject> go = new List<GameObject>();
+    public List<Transform> transforms = new List<Transform>();
     public float dtimer = 3;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        if (transforms.Count == 0)
+        {
+            transforms.Add(transform);
+        }
         if (shake)
         {
-            Camera.main.GetComponent<shake>().shakee();
+            StartCoroutine(Camera.main.GetComponent<shake>().shakee(shaketimer, shakeAmount));
+            
             Debug.Log("sha");
         }
         
@@ -40,10 +52,33 @@ public class Spellform : MonoBehaviour
 
     public void die()
     {
-        for (int i = 0; i <  go.Count; i++)
+        if(go.Count > 0)
         {
-            Instantiate(go[i], transform.position, Quaternion.identity);
+            for (int j = 0; j < transforms.Count; j++)
+            {
+                spawn(j);
+            }
         }
+        
         Destroy(gameObject);
+    }
+    public void spawn(int j)
+    {
+        Debug.Log(go.Count + " " + gameObject.name);
+        GameObject goo = Instantiate(go[0], transforms[j].position, Quaternion.identity);
+        Spellform sf = goo.GetComponent<Spellform>();
+        if (sf != null)
+        {
+            sf.spawnOnPlayer = false;
+            sf.enemies = true;
+            if (sf.prongMod)
+            {
+               // go.RemoveAt(0);
+                for (int i = 1; i < go.Count; i++)
+                {
+                    sf.go.Add(go[i]);
+                }
+            }
+        }
     }
 }

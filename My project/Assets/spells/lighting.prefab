@@ -375,9 +375,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: baab760e6a6d6994c8f6651c26a6a607, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cooldownChange: -0.3
+  prongMod: 0
   enemies: 0
   spawnOnPlayer: 1
   shake: 1
+  shaketimer: 0.5
   enemyTag: Enemy
   go: []
+  transforms: []
   dtimer: 1.5

@@ -18,6 +18,7 @@ public class stageMaker : MonoBehaviour
     public List<Island> island0Up = new List<Island>();
     public List<Island> island0Right = new List<Island>();
 
+    public List<GameObject> Modifiers = new List<GameObject>();
     public List<GameObject> TierOneSpells = new List<GameObject>();
     public List<GameObject> TierTwoSpells = new List<GameObject>();
     public List<GameObject> TierThreeSpells = new List<GameObject>();

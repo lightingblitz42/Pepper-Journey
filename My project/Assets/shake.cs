@@ -14,15 +14,16 @@ public class shake : MonoBehaviour
     {
         
     }
-    public IEnumerator shakee()
+    public IEnumerator shakee(float time, float amount)
     {
-        for(int i = 0; i < 5; i++)
+        yield return new WaitForSeconds(time);
+        Debug.Log("shaje");
+        for(int i = 0; i < 7 + amount; i++)
         {
-            float randx = Random.Range(-33, 33);
-            float randy = Random.Range(-33, 33);
+            float randx = Random.Range(-.3f, .3f);
+            float randy = Random.Range(-.3f, .3f);
             transform.position -= new Vector3(randx, randy);
-
-            yield return new WaitForSeconds(.01f);
+            yield return new WaitForSeconds(.02f);
             transform.position += new Vector3(randx, randy);
         }
         yield return null;
