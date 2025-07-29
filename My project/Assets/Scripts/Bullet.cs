@@ -20,12 +20,25 @@ public class Bullet : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Enemy")
+        if (spellform.enemies)
         {
-            Instantiate(DeathEffect, transform.position, transform.rotation);
-            collision.GetComponent<Enemy>().Health -= Random.Range(Mathf.Round(damage*1.5f),Mathf.Round(damage *.5f));
-            spellform.die();
+            if (collision.tag == "Player")
+            {
+                Instantiate(DeathEffect, transform.position, transform.rotation);
+                collision.GetComponent<Player>().health -= Random.Range(Mathf.Round(damage * 1.5f), Mathf.Round(damage * .5f));
+                spellform.die();
+            }
         }
+        else
+        {
+            if (collision.tag == "Enemy")
+            {
+                Instantiate(DeathEffect, transform.position, transform.rotation);
+                collision.GetComponent<Enemy>().Health -= Random.Range(Mathf.Round(damage * 1.5f), Mathf.Round(damage * .5f));
+                spellform.die();
+            }
+        }
+
         if(collision.tag == "wall")
         {
             Instantiate(DeathEffect, transform.position, transform.rotation);
