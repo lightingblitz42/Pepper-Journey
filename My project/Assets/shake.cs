@@ -17,7 +17,6 @@ public class shake : MonoBehaviour
     public IEnumerator shakee(float time, float amount)
     {
         yield return new WaitForSeconds(time);
-        Debug.Log("shaje");
         for(int i = 0; i < 7 + amount; i++)
         {
             float randx = Random.Range(-.3f, .3f);

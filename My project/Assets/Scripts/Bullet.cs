@@ -5,7 +5,6 @@ public class Bullet : MonoBehaviour
     public float speed = 5;
     public Rigidbody2D rb;
     public float damage = 3;
-    public bool piercing = false;
 
     public GameObject DeathEffect;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -25,10 +24,7 @@ public class Bullet : MonoBehaviour
         {
             Instantiate(DeathEffect, transform.position, transform.rotation);
             collision.GetComponent<Enemy>().Health -= Random.Range(Mathf.Round(damage*1.5f),Mathf.Round(damage *.5f));
-            if(piercing == false)
-            {
-                Destroy(gameObject);
-            }
+            gameObject.GetComponent<Spellform>().die();
         }
     }
 }

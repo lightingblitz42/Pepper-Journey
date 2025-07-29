@@ -52,7 +52,7 @@ MonoBehaviour:
   HurtText: {fileID: 174013435241155245, guid: 4a614189384a4014098e3d16f6de1fbd, type: 3}
   deathAnim: {fileID: 4242351963343379969, guid: 8e9fca8bb178ddd4e94d1a5e02746ac1, type: 3}
   animator: {fileID: 8356586059839846994}
-  Health: 12
+  Health: 15
   ed: {fileID: 3423646384285233216}
   rb: {fileID: 4048068891389243295}
   speed: 3

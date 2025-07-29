@@ -122,6 +122,7 @@ GameObject:
   - component: {fileID: 6663778540654420356}
   - component: {fileID: 3123020734526672317}
   - component: {fileID: 450334200876700209}
+  - component: {fileID: 4222683503143448496}
   m_Layer: 0
   m_Name: BulletOne
   m_TagString: Untagged
@@ -160,7 +161,6 @@ MonoBehaviour:
   speed: 20
   rb: {fileID: 3123020734526672317}
   damage: 3
-  piercing: 0
   DeathEffect: {fileID: 3463899743056143623, guid: 5fc02ce629955124d83f455279a09e93, type: 3}
 --- !u!50 &3123020734526672317
 Rigidbody2D:
@@ -235,3 +235,31 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.085875705, y: 0.116780564}
   m_EdgeRadius: 0
+--- !u!114 &4222683503143448496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2965723716503846096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baab760e6a6d6994c8f6651c26a6a607, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateright: 1
+  summoner: {fileID: 0}
+  teleport: 0
+  dig: 0
+  damage: 0
+  cooldownChange: 0
+  prongMod: 0
+  enemies: 0
+  spawnOnPlayer: 0
+  shake: 0
+  shakeAmount: 0
+  shaketimer: 0.5
+  enemyTag: Enemy
+  go: []
+  transforms: []
+  dtimer: 1

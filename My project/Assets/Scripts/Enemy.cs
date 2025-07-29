@@ -1,8 +1,11 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    public bool immune = false;
+
     public float healthBefore;
     public GameObject HurtText;
 
@@ -40,7 +43,20 @@ public class Enemy : MonoBehaviour
             Death();
         }
     }
-
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if(collision.tag == "damage" && immune != true)
+        {
+            immune = true;
+            Health -= collision.transform.root.GetComponent<Spellform>().damage;
+            StartCoroutine(unImmune());
+        }
+    }
+    IEnumerator unImmune()
+    {
+        yield return new WaitForSeconds(.2f);
+        immune = false;
+    }
     public void Death()
     {
         GameObject ded = Instantiate(deathAnim,transform.position, Quaternion.identity);

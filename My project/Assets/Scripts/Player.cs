@@ -1,8 +1,17 @@
+using System.Collections;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.U2D;
 
 public class Player : MonoBehaviour
 {
-    public float health;
+    public SpriteRenderer spriteRenderer;
+    public GameObject DiggerParts;
+    public bool digging = false;
+    public bool immune = false;
+    public bool started = false;
+    public float health = 60;
 
     public Rigidbody2D rb;
     public GameObject follow;
@@ -23,100 +32,148 @@ public class Player : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (dashDuration > 0 )
+        if(health <= 0)
         {
-            rb.linearDamping = 0;
-            dashDuration -= Time.deltaTime;
+            StartCoroutine(death());
+        }
+        if (digging)
+        {
+            spriteRenderer.enabled = false;
         }
         else
         {
-            if (dashing)
+            spriteRenderer.enabled = true;
+        }
+        if (started)
+        {
+            if (dashDuration > 0)
             {
-                
-                if(animator.GetInteger("Direction") == 0)
+                rb.linearDamping = 0;
+                dashDuration -= Time.deltaTime;
+            }
+            else
+            {
+                if (dashing)
                 {
-                    if(transform.localScale.x == -1)
+
+                    if (animator.GetInteger("Direction") == 0)
                     {
-                        Instantiate(DashAnimation, transform.position, Quaternion.Euler(0, 0, 180));
+                        if (transform.localScale.x == -1)
+                        {
+                            Instantiate(DashAnimation, transform.position, Quaternion.Euler(0, 0, 180));
+                        }
+                        else
+                        {
+                            Instantiate(DashAnimation, transform.position, Quaternion.Euler(0, 0, 0));
+                        }
                     }
-                    else
+                    else if (animator.GetInteger("Direction") == 1)
                     {
-                        Instantiate(DashAnimation, transform.position, Quaternion.Euler(0, 0, 0));
+                        Instantiate(DashAnimation, transform.position, Quaternion.Euler(0, 0, 90));
                     }
-                }
-                else if (animator.GetInteger("Direction") == 1)
-                {
-                    Instantiate(DashAnimation, transform.position, Quaternion.Euler(0, 0, 90));
-                }
-                else if (animator.GetInteger("Direction") == -1)
-                {
-                    Instantiate(DashAnimation, transform.position, Quaternion.Euler(0, 0, -90));
-                }
+                    else if (animator.GetInteger("Direction") == -1)
+                    {
+                        Instantiate(DashAnimation, transform.position, Quaternion.Euler(0, 0, -90));
+                    }
                     rb.linearDamping = 9f;
-                dashing = false;
-                rb.linearVelocity = rb.linearVelocity / 7;
+                    dashing = false;
+                    rb.linearVelocity = rb.linearVelocity / 7;
+                }
             }
-        }
-        if (dashTimer <= 0)
-        {
-            CurrentDash = 0;
-        }
-        else
-        {
-            dashTimer -= Time.deltaTime;
-        }
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            dashDetected = true;
-        }
-
-        if (dashDetected && !dashing)
-        {
-            dashDetected = false;
-            Dash();
-        }
-
-
-
-        if(!dashing)
-        {
-            animator.SetBool("Running", false);
-            if (Input.GetKey(KeyCode.A))
+            if (dashTimer <= 0)
             {
-                rb.linearVelocity = new Vector2(-speed, rb.linearVelocityY);
-                animator.SetInteger("Direction", 0);
-                animator.SetBool("Running", true);
-                transform.localScale = new Vector3(-1, 1, 1);
+                CurrentDash = 0;
             }
-            if (Input.GetKey(KeyCode.D))
+            else
             {
-                animator.SetInteger("Direction", 0);
-                rb.linearVelocity = new Vector2(speed, rb.linearVelocityY);
-                animator.SetBool("Running", true);
-                transform.localScale = new Vector3(1, 1, 1);
+                dashTimer -= Time.deltaTime;
             }
-            if (Input.GetKey(KeyCode.W))
+
+            if (Input.GetKeyDown(KeyCode.Space))
             {
-                rb.linearVelocity = new Vector2(rb.linearVelocityX, speed);
-                animator.SetInteger("Direction", 1);
-                animator.SetBool("Running", true);
+                dashDetected = true;
             }
-            if (Input.GetKey(KeyCode.S))
+
+            if (dashDetected && !dashing)
             {
-                rb.linearVelocity = new Vector2(rb.linearVelocityX, -speed);
-                animator.SetInteger("Direction", -1);
-                animator.SetBool("Running", true);
+                dashDetected = false;
+                Dash();
             }
+
+
+
+            if (!dashing)
+            {
+                animator.SetBool("Running", false);
+                if (Input.GetKey(KeyCode.A))
+                {
+                    rb.linearVelocity = new Vector2(-speed, rb.linearVelocityY);
+                    animator.SetInteger("Direction", 0);
+                    animator.SetBool("Running", true);
+                    transform.localScale = new Vector3(-1, 1, 1);
+                }
+                if (Input.GetKey(KeyCode.D))
+                {
+                    animator.SetInteger("Direction", 0);
+                    rb.linearVelocity = new Vector2(speed, rb.linearVelocityY);
+                    animator.SetBool("Running", true);
+                    transform.localScale = new Vector3(1, 1, 1);
+                }
+                if (Input.GetKey(KeyCode.W))
+                {
+                    rb.linearVelocity = new Vector2(rb.linearVelocityX, speed);
+                    animator.SetInteger("Direction", 1);
+                    animator.SetBool("Running", true);
+                }
+                if (Input.GetKey(KeyCode.S))
+                {
+                    rb.linearVelocity = new Vector2(rb.linearVelocityX, -speed);
+                    animator.SetInteger("Direction", -1);
+                    animator.SetBool("Running", true);
+                }
+            }
+        }
+       
+    }
+    public void startedd()
+    {
+        started = true;
+        Camera.main.GetComponent<CameraManager>().started = true;
+    }
+    public IEnumerator death()
+    {
+        yield return new WaitForSeconds(5);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.tag == "damage" && immune != true)
+        {
+            immune = true;
+            health -= collision.transform.root.GetComponent<Spellform>().damage;
+            StartCoroutine(unImmune());
         }
     }
-
+    IEnumerator unImmune()
+    {
+        yield return new WaitForSeconds(.2f);
+        immune = false;
+    }
+    public IEnumerator Digging()
+    {
+        digging = true;
+        transform.GetComponent<BoxCollider2D>().enabled = false;
+        Instantiate(DiggerParts, transform.root, false);
+        yield return new WaitForSeconds(2);
+        transform.GetComponent<BoxCollider2D>().enabled = true;
+        digging = false;
+    }
     public void Dash()
     {
         if(CurrentDash < DashMax)

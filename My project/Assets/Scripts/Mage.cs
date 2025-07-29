@@ -100,16 +100,26 @@ public class Mage : Enemy
                 {
 
                     sp.go.Add(Spells[count]);
+                    count++;
                     if (count < Spells.Count)
                     {
                         Spellform d = Spells[count].GetComponent<Spellform>();
                         if(d != null && !d.prongMod)
                         {
+                            count++;
                             break;
                         }
                     }
-                    count++;
+                    
                 }
+            }
+            if (sp.teleport)
+            {
+                sp.summoner = gameObject;
+            }
+            if (sp.rotateright)
+            {
+                spellzz.transform.rotation = transform.rotation;
             }
         }
     }

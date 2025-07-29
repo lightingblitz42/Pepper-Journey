@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class Spellform : MonoBehaviour
 {
+    public bool rotateright = false;
+
+    public GameObject summoner;
+    public bool teleport = false;
+    public bool dig = false;
+
+    public float damage = 1;
+
     public float cooldownChange = 0;
 
     public bool prongMod = false;
@@ -21,6 +29,10 @@ public class Spellform : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        if (dig)
+        {
+            diggg();
+        }
         if (transforms.Count == 0)
         {
             transforms.Add(transform);
@@ -28,13 +40,10 @@ public class Spellform : MonoBehaviour
         if (shake)
         {
             StartCoroutine(Camera.main.GetComponent<shake>().shakee(shaketimer, shakeAmount));
-            
-            Debug.Log("sha");
         }
         
         if (spawnOnPlayer && enemies)
         {
-            Debug.Log("te");
             transform.position = GameObject.FindGameObjectWithTag("Player").transform.position;
         }
     }
@@ -59,14 +68,23 @@ public class Spellform : MonoBehaviour
                 spawn(j);
             }
         }
-        
+        if (teleport)
+        {
+            if(summoner != null)
+            {
+                summoner.transform.position = transform.position;
+            }
+        }
         Destroy(gameObject);
     }
     public void spawn(int j)
     {
-        Debug.Log(go.Count + " " + gameObject.name);
         GameObject goo = Instantiate(go[0], transforms[j].position, Quaternion.identity);
         Spellform sf = goo.GetComponent<Spellform>();
+        if (sf.rotateright)
+        {
+            goo.transform.rotation = transform.rotation;
+        }
         if (sf != null)
         {
             sf.spawnOnPlayer = false;
@@ -79,6 +97,16 @@ public class Spellform : MonoBehaviour
                     sf.go.Add(go[i]);
                 }
             }
+            if (sf.teleport)
+            {
+                sf.summoner = gameObject;
+            }
         }
+    }
+    public void diggg()
+    {
+        Player p = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        StartCoroutine(p.Digging());
+
     }
 }
