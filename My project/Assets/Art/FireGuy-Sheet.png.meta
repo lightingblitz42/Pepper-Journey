@@ -1,0 +1,1530 @@
+fileFormatVersion: 2
+guid: b51266a26fb630b42b10ed2c20e72935
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9123882208873312523
+    second: FireGuy-Sheet_0
+  - first:
+      213: 5271695195763650155
+    second: FireGuy-Sheet_1
+  - first:
+      213: 4081620021079161350
+    second: FireGuy-Sheet_2
+  - first:
+      213: -8757445139652514596
+    second: FireGuy-Sheet_3
+  - first:
+      213: -5223111440476714701
+    second: FireGuy-Sheet_4
+  - first:
+      213: -5477702828722749473
+    second: FireGuy-Sheet_5
+  - first:
+      213: -3663538528503878003
+    second: FireGuy-Sheet_6
+  - first:
+      213: 6762694813337984462
+    second: FireGuy-Sheet_7
+  - first:
+      213: 1738635519470688365
+    second: FireGuy-Sheet_8
+  - first:
+      213: -2637411884169284097
+    second: FireGuy-Sheet_9
+  - first:
+      213: 946321082317008643
+    second: FireGuy-Sheet_10
+  - first:
+      213: 5249521547304229831
+    second: FireGuy-Sheet_11
+  - first:
+      213: -3062945408340018066
+    second: FireGuy-Sheet_12
+  - first:
+      213: -2013535321567871219
+    second: FireGuy-Sheet_13
+  - first:
+      213: 1359727840825871005
+    second: FireGuy-Sheet_14
+  - first:
+      213: 6229768977705205375
+    second: FireGuy-Sheet_15
+  - first:
+      213: 2285659455763729635
+    second: FireGuy-Sheet_16
+  - first:
+      213: 4981005904594943600
+    second: FireGuy-Sheet_17
+  - first:
+      213: 2855706498254730752
+    second: FireGuy-Sheet_18
+  - first:
+      213: 987413711728588394
+    second: FireGuy-Sheet_19
+  - first:
+      213: 1532201848025553880
+    second: FireGuy-Sheet_20
+  - first:
+      213: 5348863071570692636
+    second: FireGuy-Sheet_21
+  - first:
+      213: -7712514175410895213
+    second: FireGuy-Sheet_22
+  - first:
+      213: -9169120512104629763
+    second: FireGuy-Sheet_23
+  - first:
+      213: -8244192947158904953
+    second: FireGuy-Sheet_24
+  - first:
+      213: 4356120601189270369
+    second: FireGuy-Sheet_25
+  - first:
+      213: 8559129945195221449
+    second: FireGuy-Sheet_26
+  - first:
+      213: -8869337921651774743
+    second: FireGuy-Sheet_27
+  - first:
+      213: -245910609095452337
+    second: FireGuy-Sheet_28
+  - first:
+      213: 5391819485839887732
+    second: FireGuy-Sheet_29
+  - first:
+      213: 5166549523130159745
+    second: FireGuy-Sheet_30
+  - first:
+      213: 123040109551855861
+    second: FireGuy-Sheet_31
+  - first:
+      213: 2483325128162071389
+    second: FireGuy-Sheet_32
+  - first:
+      213: 4148229111874404960
+    second: FireGuy-Sheet_33
+  - first:
+      213: -8539861964374150419
+    second: FireGuy-Sheet_34
+  - first:
+      213: -8316070702695983428
+    second: FireGuy-Sheet_35
+  - first:
+      213: -4017374007074955260
+    second: FireGuy-Sheet_36
+  - first:
+      213: 9216109886804148139
+    second: FireGuy-Sheet_37
+  - first:
+      213: -2384512135732259399
+    second: FireGuy-Sheet_38
+  - first:
+      213: -4929885140794736565
+    second: FireGuy-Sheet_39
+  - first:
+      213: -3024916256025348806
+    second: FireGuy-Sheet_40
+  - first:
+      213: -3358484731096691702
+    second: FireGuy-Sheet_41
+  - first:
+      213: 3363391488588443810
+    second: FireGuy-Sheet_42
+  - first:
+      213: -9221365248692570969
+    second: FireGuy-Sheet_43
+  - first:
+      213: -847785883531473095
+    second: FireGuy-Sheet_44
+  - first:
+      213: 1821875496738071561
+    second: FireGuy-Sheet_45
+  - first:
+      213: -5943168600995224790
+    second: FireGuy-Sheet_46
+  - first:
+      213: 2835251384941157866
+    second: FireGuy-Sheet_47
+  - first:
+      213: -3387950284993712712
+    second: FireGuy-Sheet_48
+  - first:
+      213: 769940507638201222
+    second: FireGuy-Sheet_49
+  - first:
+      213: -4031243058354038648
+    second: FireGuy-Sheet_50
+  - first:
+      213: -6494208128209935565
+    second: FireGuy-Sheet_51
+  - first:
+      213: 2571077059920340483
+    second: FireGuy-Sheet_52
+  - first:
+      213: 1598838279112976294
+    second: FireGuy-Sheet_53
+  - first:
+      213: 7435675017364911135
+    second: FireGuy-Sheet_54
+  - first:
+      213: -5123396721917402626
+    second: FireGuy-Sheet_55
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FireGuy-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 353
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fe899fa875716180800000000000000
+      internalID: -9123882208873312523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 354
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6e20a399d2d82940800000000000000
+      internalID: 5271695195763650155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 353
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60abb88a8c3d4a830800000000000000
+      internalID: 4081620021079161350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 354
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdc6a0f5b0e477680800000000000000
+      internalID: -8757445139652514596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 305
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3394b1071d7c387b0800000000000000
+      internalID: -5223111440476714701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 305
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdff3d4ac4a4bf3b0800000000000000
+      internalID: -5477702828722749473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 305
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8ea19b5e1f782dc0800000000000000
+      internalID: -3663538528503878003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 305
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecd13693a1be9dd50800000000000000
+      internalID: 6762694813337984462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 305
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d685de31bcfd02810800000000000000
+      internalID: 1738635519470688365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 305
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff532bd6dd7066bd0800000000000000
+      internalID: -2637411884169284097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 305
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30fe7f2b202022d00800000000000000
+      internalID: 946321082317008643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 305
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cbd3dbb80c0ad840800000000000000
+      internalID: 5249521547304229831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 300
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6cba79116b3e75d0800000000000000
+      internalID: -3062945408340018066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 296
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0fbe3f0b4c7e04e0800000000000000
+      internalID: -2013535321567871219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 257
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9a82af5449bed210800000000000000
+      internalID: 1359727840825871005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 258
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7efdd4e0e5947650800000000000000
+      internalID: 6229768977705205375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 257
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ec4f424a2b48bf10800000000000000
+      internalID: 2285659455763729635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 258
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07e318fca76102540800000000000000
+      internalID: 4981005904594943600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 209
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0067f331ee181a720800000000000000
+      internalID: 2855706498254730752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 209
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a66beed0a8ff3bd00800000000000000
+      internalID: 987413711728588394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 209
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8db92cb7679734510800000000000000
+      internalID: 1532201848025553880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 209
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1a0d25cf9afa3a40800000000000000
+      internalID: 5348863071570692636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 209
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39608795835a7f490800000000000000
+      internalID: -7712514175410895213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 209
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df9714d697db0c080800000000000000
+      internalID: -9169120512104629763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 209
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78f00d4b13eb69d80800000000000000
+      internalID: -8244192947158904953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 209
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 163c5a86b9c047c30800000000000000
+      internalID: 4356120601189270369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 204
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c115c1465328c670800000000000000
+      internalID: 8559129945195221449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 200
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ea6b0be628c9e480800000000000000
+      internalID: -8869337921651774743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 161
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f499d5a9a99569cf0800000000000000
+      internalID: -245910609095452337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 162
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47d048a514793da40800000000000000
+      internalID: 5391819485839887732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 161
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18213a0fa6543b740800000000000000
+      internalID: 5166549523130159745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 162
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f8a6f6e35025b100800000000000000
+      internalID: 123040109551855861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 113
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d53d6edfb0b867220800000000000000
+      internalID: 2483325128162071389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 113
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06245342668719930800000000000000
+      internalID: 4148229111874404960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 113
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de2fb9e1ac05c7980800000000000000
+      internalID: -8539861964374150419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 113
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb6d5ce91c1679c80800000000000000
+      internalID: -8316070702695983428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 113
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 400e86220ab6f38c0800000000000000
+      internalID: -4017374007074955260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 113
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baf3dedec1336ef70800000000000000
+      internalID: 9216109886804148139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 113
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b51213a8d288eed0800000000000000
+      internalID: -2384512135732259399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 113
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4004778597859bb0800000000000000
+      internalID: -4929885140794736565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 108
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a35fd4c11b65506d0800000000000000
+      internalID: -3024916256025348806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 104
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0c886b5ee34461d0800000000000000
+      internalID: -3358484731096691702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 65
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a0f2e52dba2dae20800000000000000
+      internalID: 3363391488588443810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 66
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a43c87c921270080800000000000000
+      internalID: -9221365248692570969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 65
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93f048e0b3f0c34f0800000000000000
+      internalID: -847785883531473095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 66
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 904af009c1a984910800000000000000
+      internalID: 1821875496738071561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 17
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a23ac6945af958da0800000000000000
+      internalID: -5943168600995224790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 17
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aed1a50ec16d85720800000000000000
+      internalID: 2835251384941157866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 17
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bd244a7a259bf0d0800000000000000
+      internalID: -3387950284993712712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 17
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68b75f7ffc06faa00800000000000000
+      internalID: 769940507638201222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 17
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8885c8ffbc52e08c0800000000000000
+      internalID: -4031243058354038648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 17
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 333a79c7d10ffd5a0800000000000000
+      internalID: -6494208128209935565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 17
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30625beb6fc4ea320800000000000000
+      internalID: 2571077059920340483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 17
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a763df91f6303610800000000000000
+      internalID: 1598838279112976294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 12
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f14384b4803d03760800000000000000
+      internalID: 7435675017364911135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireGuy-Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 8
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef166ba83d906e8b0800000000000000
+      internalID: -5123396721917402626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -153,7 +153,7 @@ public class Player : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.tag == "damage" && immune != true)
+        if (collision.tag == "damage" && immune != true && digging != true && dashing != true)
         {
             immune = true;
             health -= collision.transform.root.GetComponent<Spellform>().damage;

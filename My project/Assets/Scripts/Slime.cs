@@ -4,14 +4,20 @@ using UnityEngine;
 
 public class Slime : Enemy
 {
+    public bool King = false;
     public float scalePlus = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        attackMax = Random.Range(2.5f, 5);
+        if (!King)
+        {
+            attackMax = Random.Range(2.5f, 5);
+
+            float r = Random.Range(6f, 13f);
+            transform.localScale = new Vector3(r + scalePlus, r + scalePlus);
+
+        }
         attckTimer = attackMax;
-        float r = Random.Range(6f, 13f);
-        transform.localScale = new Vector3(r + scalePlus, r + scalePlus);
     }
 
     // Update is called once per frame
