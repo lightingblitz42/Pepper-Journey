@@ -73,7 +73,7 @@ CircleCollider2D:
     m_Bits: 4294967295
   m_ContactCaptureLayers:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 55
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -132,6 +132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88e5ededca545d549a3e383dca8a9b5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  immune: 0
   healthBefore: 0
   HurtText: {fileID: 174013435241155245, guid: 4a614189384a4014098e3d16f6de1fbd, type: 3}
   deathAnim: {fileID: 4958045039401321033, guid: a20a2927c0708124c97955b8718932e4, type: 3}
@@ -163,7 +164,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 63
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0

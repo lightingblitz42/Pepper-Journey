@@ -115,7 +115,7 @@ public class Mage : Enemy
             }
             if (sp.teleport)
             {
-                sp.summoner = gameObject;
+                sp.summoner = transform.root.gameObject; ;
             }
             if (sp.rotateright)
             {

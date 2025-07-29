@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3662870813431113772}
   - component: {fileID: 3927720017490650703}
   - component: {fileID: 6411593463392581939}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lighting
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169,7 +169,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4725252933612319521}
   - component: {fileID: 7281395420999323397}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Light 2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -253,7 +253,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1401666350494525266}
   - component: {fileID: 2369868178722694162}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -375,11 +375,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: baab760e6a6d6994c8f6651c26a6a607, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rotateright: 0
+  summoner: {fileID: 0}
+  teleport: 0
+  dig: 0
+  damage: 1
   cooldownChange: -0.3
   prongMod: 1
   enemies: 0
   spawnOnPlayer: 1
   shake: 1
+  shakeAmount: 0
   shaketimer: 0.5
   enemyTag: Enemy
   go: []

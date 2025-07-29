@@ -61,7 +61,7 @@ public class Shoot : MonoBehaviour
                 }
                 if (sp.teleport)
                 {
-                    sp.summoner = gameObject;
+                    sp.summoner = transform.root.gameObject;
                 }
                 if (sp.rotateright)
                 {
