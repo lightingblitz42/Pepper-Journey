@@ -386,6 +386,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: baab760e6a6d6994c8f6651c26a6a607, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Small: 0
+  doneDie: 1
   rotateright: 0
   summoner: {fileID: 0}
   teleport: 0

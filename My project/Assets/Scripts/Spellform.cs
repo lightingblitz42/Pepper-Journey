@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Spellform : MonoBehaviour
 {
+    public bool Small = true;
+    public bool doneDie = false;
     public bool rotateright = false;
 
     public GameObject summoner;
@@ -54,7 +56,10 @@ public class Spellform : MonoBehaviour
         dtimer -= Time.deltaTime;
         if(dtimer < 0)
         {
-            die();
+            if (!doneDie)
+            {
+                die();
+            }
         }
     }
 

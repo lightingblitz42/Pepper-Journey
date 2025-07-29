@@ -47,9 +47,12 @@ public class Enemy : MonoBehaviour
     {
         if(collision.tag == "damage" && immune != true)
         {
-            immune = true;
-            Health -= collision.transform.root.GetComponent<Spellform>().damage;
-            StartCoroutine(unImmune());
+            if (!collision.GetComponent<Spellform>().Small)
+            {
+                immune = true;
+                Health -= collision.transform.root.GetComponent<Spellform>().damage;
+                StartCoroutine(unImmune());
+            }
         }
     }
     IEnumerator unImmune()
