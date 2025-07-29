@@ -115,7 +115,7 @@ MonoBehaviour:
   summoner: {fileID: 0}
   teleport: 0
   dig: 0
-  damage: 1
+  damage: 3
   cooldownChange: 0.4
   prongMod: 0
   enemies: 0

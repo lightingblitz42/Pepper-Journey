@@ -38,7 +38,7 @@ public class Shoot : MonoBehaviour
             count++;
             if (sp != null)
             {
-                sp.enemies = true;
+                sp.enemies = false;
                 if (sp.prongMod)
                 {
                     Debug.Log(count);

@@ -25,7 +25,7 @@ public class Mage : Enemy
         attckTimer = attackMax;
         if(Random.value > .6f)
         {
-            Spells.Add(stageMaker.Modifiers[Random.Range(0,stageMaker.Modifiers.Count)]);
+            Spells.Add(stageMaker.Modifiers[Random.Range(0,stageMaker.Modifiers.Count - 1)]);
         }
         for (int i = 0; i < Random.Range(2, 5); i++)
         {
@@ -34,7 +34,7 @@ public class Mage : Enemy
             {
                 Spells.Add(stageMaker.TierOneSpells[Random.Range(0, stageMaker.TierOneSpells.Count)]);
             }
-            else if (Random.value > .3f)
+            else if (Random.value > .1f)
             {
                 Spells.Add(stageMaker.TierTwoSpells[Random.Range(0, stageMaker.TierTwoSpells.Count)]);
             }

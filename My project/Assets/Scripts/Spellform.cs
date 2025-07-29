@@ -93,7 +93,7 @@ public class Spellform : MonoBehaviour
         if (sf != null)
         {
             sf.spawnOnPlayer = false;
-            sf.enemies = true;
+            sf.enemies = enemies;
             if (sf.prongMod)
             {
                // go.RemoveAt(0);

@@ -1,7 +1,10 @@
+using System.Collections;
 using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    public bool wait = false;
+    public bool homming = false;  
     public float speed = 5;
     public Rigidbody2D rb;
     public float damage = 3;
@@ -10,13 +13,39 @@ public class Bullet : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        if (homming)
+        {
+            transform.position += new Vector3(Random.Range(-4, 4), Random.Range(-4, 4));
+            StartCoroutine(hommingg());
+        }
         spellform = GetComponent<Spellform>();
+        if (spellform.enemies)
+        {
+            GameObject player = GameObject.Find("Player");
+            Vector3 perpendicular = transform.position - player.transform.position;
+            transform.rotation = Quaternion.LookRotation(Vector3.forward, perpendicular);
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position += -transform.up * Time.deltaTime * speed;
+        if (!wait)
+        {
+            transform.position += -transform.up * Time.deltaTime * speed;
+        }
+        else
+        {
+            transform.position += -transform.up * Time.deltaTime * speed/10;
+        }
+        if (homming && spellform.enemies)
+        {
+            GameObject player = GameObject.Find("Player");
+            Vector3 perpendicular = transform.position - player.transform.position;
+           Quaternion endRotation = Quaternion.LookRotation(Vector3.forward * Time.deltaTime, perpendicular);
+
+            transform.rotation = Quaternion.Slerp(transform.rotation, endRotation, Time.deltaTime);
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -48,5 +77,11 @@ public class Bullet : MonoBehaviour
         {
             spellform.die();
         }
+    }
+    public IEnumerator hommingg()
+    {
+        wait = true;
+        yield return new WaitForSeconds(1);
+        wait = false;
     }
 }

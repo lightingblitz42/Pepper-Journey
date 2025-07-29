@@ -45,14 +45,11 @@ public class Enemy : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if(collision.tag == "damage" && immune != true)
+        if(collision.tag == "damage" && immune != true && collision.transform.root.GetComponent<Spellform>() != null)
         {
-            if (!collision.GetComponent<Spellform>().Small)
-            {
                 immune = true;
                 Health -= collision.transform.root.GetComponent<Spellform>().damage;
                 StartCoroutine(unImmune());
-            }
         }
     }
     IEnumerator unImmune()
