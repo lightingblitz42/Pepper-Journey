@@ -52,6 +52,7 @@ public class Shoot : MonoBehaviour
                             Spellform d = Spells[count].GetComponent<Spellform>();
                             if (d != null && !d.prongMod)
                             {
+                                sp.go.Add(Spells[count]);
                                 count++;
                                 break;
                             }
