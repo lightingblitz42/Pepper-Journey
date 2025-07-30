@@ -5,6 +5,7 @@ using UnityEngine;
 public class Activate : MonoBehaviour
 {
     public List<GameObject> g = new List<GameObject>();
+    public List<GameObject> d = new List<GameObject>();
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -23,6 +24,15 @@ public class Activate : MonoBehaviour
             for(int i = 0; i < g.Count; i++)
             {
                 g[i].SetActive(true);
+                
+            }
+            for(int i = 0; i < d.Count; i++)
+            {
+                if (d[i] != null)
+                {
+                    d[i].SetActive(false);
+                }
+
             }
         }
     }

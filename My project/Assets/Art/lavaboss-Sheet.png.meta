@@ -1,0 +1,855 @@
+fileFormatVersion: 2
+guid: 11eb8a84a5c3ef548b97186f47c2a900
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5359092121514249462
+    second: lavaboss-Sheet_0
+  - first:
+      213: 9193910357276622663
+    second: lavaboss-Sheet_1
+  - first:
+      213: -5801409451224478632
+    second: lavaboss-Sheet_2
+  - first:
+      213: 6537340974113475874
+    second: lavaboss-Sheet_3
+  - first:
+      213: -4838215484446836632
+    second: lavaboss-Sheet_4
+  - first:
+      213: 5616030248483906696
+    second: lavaboss-Sheet_5
+  - first:
+      213: 2024942369573926347
+    second: lavaboss-Sheet_6
+  - first:
+      213: 5346910253395099558
+    second: lavaboss-Sheet_7
+  - first:
+      213: 4715811748101580261
+    second: lavaboss-Sheet_8
+  - first:
+      213: 8199416459234987690
+    second: lavaboss-Sheet_9
+  - first:
+      213: -8696321036368355265
+    second: lavaboss-Sheet_10
+  - first:
+      213: 5836101388050555847
+    second: lavaboss-Sheet_11
+  - first:
+      213: -3576307169941040385
+    second: lavaboss-Sheet_12
+  - first:
+      213: 8385262067444433786
+    second: lavaboss-Sheet_13
+  - first:
+      213: -3063375854911033371
+    second: lavaboss-Sheet_14
+  - first:
+      213: -4393236298595772782
+    second: lavaboss-Sheet_15
+  - first:
+      213: -5342395346498529350
+    second: lavaboss-Sheet_16
+  - first:
+      213: 5983892121335039843
+    second: lavaboss-Sheet_17
+  - first:
+      213: -5072433116216004327
+    second: lavaboss-Sheet_18
+  - first:
+      213: -7731728384970913920
+    second: lavaboss-Sheet_19
+  - first:
+      213: -4136563252691482748
+    second: lavaboss-Sheet_20
+  - first:
+      213: 2054979339142010663
+    second: lavaboss-Sheet_21
+  - first:
+      213: 5749058963177008747
+    second: lavaboss-Sheet_22
+  - first:
+      213: -3803273720587429079
+    second: lavaboss-Sheet_23
+  - first:
+      213: -576053211518428696
+    second: lavaboss-Sheet_24
+  - first:
+      213: -4246798936771720473
+    second: lavaboss-Sheet_25
+  - first:
+      213: -2976414435965104494
+    second: lavaboss-Sheet_26
+  - first:
+      213: -129578777500601579
+    second: lavaboss-Sheet_27
+  - first:
+      213: 4556351480358348620
+    second: lavaboss-Sheet_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: lavaboss-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 492
+        width: 50
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fc837d04e15f5a40800000000000000
+      internalID: 5359092121514249462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lavaboss-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 492
+        width: 50
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74ff14e22c4579f70800000000000000
+      internalID: 9193910357276622663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lavaboss-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 492
+        width: 50
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85ccb2f57d04d7fa0800000000000000
+      internalID: -5801409451224478632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lavaboss-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 412
+        width: 50
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22dc3a9cafc49ba50800000000000000
+      internalID: 6537340974113475874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lavaboss-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 412
+        width: 50
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86870ce96a43bdcb0800000000000000
+      internalID: -4838215484446836632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lavaboss-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 412
+        width: 50
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8846bb881c520fd40800000000000000
+      internalID: 5616030248483906696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lavaboss-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 412
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc577154b5a0a1c10800000000000000
+      internalID: 2024942369573926347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lavaboss-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 412
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6af328bdb8a043a40800000000000000
+      internalID: 5346910253395099558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lavaboss-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 412
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e56539accde17140800000000000000
+      internalID: 4715811748101580261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lavaboss-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 332
+        width: 50
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aae413ac3dd2ac170800000000000000
+      internalID: 8199416459234987690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lavaboss-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 332
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f30e18ea716705780800000000000000
+      internalID: -8696321036368355265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lavaboss-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 252
+        width: 50
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c3eaeb9a4ffdf050800000000000000
+      internalID: 5836101388050555847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lavaboss-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 252
+        width: 50
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff25bf7b3976e5ec0800000000000000
+      internalID: -3576307169941040385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lavaboss-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 252
+        width: 50
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a73459e5c6f6e5470800000000000000
+      internalID: 8385262067444433786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lavaboss-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 172
+        width: 51
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5efe482f3e3bc75d0800000000000000
+      internalID: -3063375854911033371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lavaboss-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 172
+        width: 50
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 296d8dfdcd61803c0800000000000000
+      internalID: -4393236298595772782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lavaboss-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 172
+        width: 50
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab75142dcbffbd5b0800000000000000
+      internalID: -5342395346498529350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lavaboss-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 172
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3670f6a2e2e0b0350800000000000000
+      internalID: 5983892121335039843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lavaboss-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 172
+        width: 50
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9117409a4f81b99b0800000000000000
+      internalID: -5072433116216004327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lavaboss-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 172
+        width: 50
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08701029ff163b490800000000000000
+      internalID: -7731728384970913920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lavaboss-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 92
+        width: 50
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 487c36c53a9f796c0800000000000000
+      internalID: -4136563252691482748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lavaboss-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 129
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 727935a32d0c48c10800000000000000
+      internalID: 2054979339142010663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lavaboss-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 92
+        width: 51
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6ee0fccaa2c8cf40800000000000000
+      internalID: 5749058963177008747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lavaboss-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 12
+        width: 50
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92bdec4a3be083bc0800000000000000
+      internalID: -3803273720587429079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lavaboss-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 12
+        width: 50
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e998bbf7a27108f0800000000000000
+      internalID: -576053211518428696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lavaboss-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 12
+        width: 50
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ea07351ed65015c0800000000000000
+      internalID: -4246798936771720473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lavaboss-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 12
+        width: 50
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29e84f717d6a1b6d0800000000000000
+      internalID: -2976414435965104494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lavaboss-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 12
+        width: 50
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 513b5a4d9c4a33ef0800000000000000
+      internalID: -129578777500601579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lavaboss-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 12
+        width: 50
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c47a592e7896b3f30800000000000000
+      internalID: 4556351480358348620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
