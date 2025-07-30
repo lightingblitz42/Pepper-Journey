@@ -62,8 +62,6 @@ public class Spellform : MonoBehaviour
             }
         }
     }
-
-
     public void die()
     {
         if(go.Count > 0)
@@ -86,12 +84,12 @@ public class Spellform : MonoBehaviour
     {
         GameObject goo = Instantiate(go[0], transforms[j].position, Quaternion.identity);
         Spellform sf = goo.GetComponent<Spellform>();
-        if (sf.rotateright)
-        {
-            goo.transform.rotation = transform.rotation;
-        }
         if (sf != null)
         {
+            if (sf.rotateright)
+            {
+                goo.transform.rotation = transform.rotation;
+            }
             sf.spawnOnPlayer = false;
             sf.enemies = enemies;
             if (sf.prongMod)

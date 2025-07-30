@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class Mage : Enemy
 {
+    public bool manual = false;
     public float tie = 0;
 
     public stageMaker stageMaker;
@@ -21,28 +22,31 @@ public class Mage : Enemy
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        attackMax = Random.Range(.3f, 3);
+        if (!manual)
+        {
+            attackMax = Random.Range(.3f, 3);
+            if (Random.value > .6f)
+            {
+                Spells.Add(stageMaker.Modifiers[Random.Range(0, stageMaker.Modifiers.Count - 1)]);
+            }
+            for (int i = 0; i < Random.Range(2, 5); i++)
+            {
+
+                if (Random.value > .5f)
+                {
+                    Spells.Add(stageMaker.TierOneSpells[Random.Range(0, stageMaker.TierOneSpells.Count)]);
+                }
+                else if (Random.value > .1f)
+                {
+                    Spells.Add(stageMaker.TierTwoSpells[Random.Range(0, stageMaker.TierTwoSpells.Count)]);
+                }
+                else if (Random.value > 0)
+                {
+                    Spells.Add(stageMaker.TierThreeSpells[Random.Range(0, stageMaker.TierThreeSpells.Count)]);
+                }
+            }
+        }
         attckTimer = attackMax;
-        if(Random.value > .6f)
-        {
-            Spells.Add(stageMaker.Modifiers[Random.Range(0,stageMaker.Modifiers.Count - 1)]);
-        }
-        for (int i = 0; i < Random.Range(2, 5); i++)
-        {
-           
-            if(Random.value > .5f)
-            {
-                Spells.Add(stageMaker.TierOneSpells[Random.Range(0, stageMaker.TierOneSpells.Count)]);
-            }
-            else if (Random.value > .1f)
-            {
-                Spells.Add(stageMaker.TierTwoSpells[Random.Range(0, stageMaker.TierTwoSpells.Count)]);
-            }
-            else if (Random.value > 0)
-            {
-                Spells.Add(stageMaker.TierThreeSpells[Random.Range(0, stageMaker.TierThreeSpells.Count)]);
-            }
-        }
     }
 
     // Update is called once per frame
