@@ -49,4 +49,10 @@ public class Slime : Enemy
         animator.SetBool("Jump", false);
         attacking = false;
     }
+    public IEnumerator explode()
+    {
+        animator.SetBool("Explode", true);
+        yield return new WaitForSeconds(.5f);
+        GetComponent<Spellform>().die();
+    }
 }

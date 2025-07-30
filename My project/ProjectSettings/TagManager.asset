@@ -9,6 +9,7 @@ TagManager:
   - wall
   - Wall2
   - StageMaker
+  - Spell
   layers:
   - Default
   - TransparentFX

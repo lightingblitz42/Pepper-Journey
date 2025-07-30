@@ -1,4 +1,9 @@
+using NUnit;
+using NUnit.Framework;
+using NUnit.Framework.Constraints;
 using System.Collections;
+using System.Collections.Generic;
+using UnityEditor.Build.Content;
 using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -6,6 +11,12 @@ using UnityEngine.U2D;
 
 public class Player : MonoBehaviour
 {
+    public SpellLetters org;
+    public List<SpellLetters> SpellLetterss = new List<SpellLetters>();
+    public SpellLetters SwichRune;
+    public GameObject inv;
+    public GameObject invbuttons;
+
     public SpriteRenderer spriteRenderer;
     public GameObject DiggerParts;
     public bool digging = false;
@@ -38,6 +49,11 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyUp(KeyCode.E) && invbuttons.activeSelf && inv.activeSelf)
+        {
+            inv.SetActive(false);
+            invbuttons.SetActive(false);
+        }
         if(health <= 0)
         {
             StartCoroutine(death());
@@ -159,6 +175,19 @@ public class Player : MonoBehaviour
             health -= collision.transform.root.GetComponent<Spellform>().damage;
             StartCoroutine(unImmune());
         }
+        if(collision.tag == "Spell")
+        {
+            Debug.Log("2");
+            if (Input.GetKey(KeyCode.E)){
+                org = collision.GetComponent<SpellLetters>();
+                SwichRune.gameObject.GetComponent<SpriteRenderer>().sprite = collision.GetComponent<SpriteRenderer>().sprite;
+                SwichRune.Spell = collision.GetComponent<SpellLetters>().Spell;
+                SwichRune.num = collision.GetComponent <SpellLetters>().num;
+                SwichRune.SpriteRenderer.color = collision.GetComponent<SpriteRenderer>().color;
+                inv.SetActive(true);
+                invbuttons.SetActive(true);
+            }
+        }
     }
     IEnumerator unImmune()
     {
@@ -192,5 +221,19 @@ public class Player : MonoBehaviour
                 rb.linearVelocity = new Vector2(rb.linearVelocityX, dashspeed * 8 * dir);
             }
         }
+    }
+    public void Switch(int num)
+    {
+        GameObject hold = SpellLetterss[num].Spell;
+        Sprite spriteRendererHold = SpellLetterss[num].SpriteRenderer.sprite;
+        Color c = SpellLetterss[num].SpriteRenderer.color;
+
+        SpellLetterss[num].SpriteRenderer.sprite = SwichRune.SpriteRenderer.sprite;
+        SpellLetterss[num].SpriteRenderer.color = SwichRune.SpriteRenderer.color;
+        SpellLetterss[num].Spell = org.Spell;
+
+        org.SpriteRenderer.sprite = spriteRendererHold;
+        org.SpriteRenderer.color = c;
+        org.Spell = hold;
     }
 }

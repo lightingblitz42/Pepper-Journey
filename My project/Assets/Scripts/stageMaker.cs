@@ -5,6 +5,8 @@ using System.Linq;
 
 public class stageMaker : MonoBehaviour
 {
+    public List<SpellLetters> SpellsLetters = new List<SpellLetters>();
+
     public float ups = 0;
 
     public List<float> type = new List<float>();

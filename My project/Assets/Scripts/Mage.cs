@@ -86,6 +86,18 @@ public class Mage : Enemy
         {
             animator.SetBool("Casting", false);
         }
+        if(Health <= 0)
+        {
+            int d = Random.Range(0, Spells.Count - 1);
+            for(int i = 0; i < stageMaker.SpellsLetters.Count; i++)
+            {
+                if (Spells[d] == stageMaker.SpellsLetters[i].Spell)
+                {
+                    Instantiate(stageMaker.SpellsLetters[i], transform.position, Quaternion.identity);
+                    break;
+                }
+            }
+        }
         base.Update();
     }
 

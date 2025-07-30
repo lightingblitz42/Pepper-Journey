@@ -57,7 +57,7 @@ public class Spellform : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (col)
+        if (col && spawnWhileAlive)
         {
             StartCoroutine(awdaf());
         }
