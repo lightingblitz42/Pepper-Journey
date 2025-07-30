@@ -23,7 +23,7 @@ public class Activate : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (hell && ColorUtility.TryParseHtmlString("#FF0000", out Color myColor))
+        if (hell && ColorUtility.TryParseHtmlString("#675034", out Color myColor) && collision.tag == "Player")
         {
             Camera.main.backgroundColor = myColor;
         }

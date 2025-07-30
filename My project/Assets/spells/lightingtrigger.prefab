@@ -375,6 +375,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: baab760e6a6d6994c8f6651c26a6a607, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnWhileAlive: 0
+  col: 1
+  Small: 1
+  doneDie: 0
   rotateright: 0
   summoner: {fileID: 0}
   teleport: 0
@@ -385,7 +389,7 @@ MonoBehaviour:
   enemies: 0
   spawnOnPlayer: 1
   shake: 1
-  shakeAmount: 0
+  shakeAmount: -3
   shaketimer: 0.5
   enemyTag: Enemy
   go: []

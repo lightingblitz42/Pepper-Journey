@@ -1,9 +1,13 @@
 using NUnit.Framework;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Spellform : MonoBehaviour
 {
+    public bool spawnWhileAlive = false;
+    public bool col = true;
+
     public bool Small = true;
     public bool doneDie = false;
     public bool rotateright = false;
@@ -53,6 +57,10 @@ public class Spellform : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (col)
+        {
+            StartCoroutine(awdaf());
+        }
         dtimer -= Time.deltaTime;
         if(dtimer < 0)
         {
@@ -102,7 +110,7 @@ public class Spellform : MonoBehaviour
             }
             if (sf.teleport)
             {
-                sf.summoner = gameObject;
+                sf.summoner = summoner;
             }
         }
     }
@@ -111,5 +119,18 @@ public class Spellform : MonoBehaviour
         Player p = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         StartCoroutine(p.Digging());
 
+    }
+    public IEnumerator awdaf()
+    {
+        col = false;
+        yield return new WaitForSeconds(.1f);
+        col = true;
+        if (go.Count > 0)
+        {
+            for (int j = 0; j < transforms.Count; j++)
+            {
+                spawn(j);
+            }
+        }
     }
 }

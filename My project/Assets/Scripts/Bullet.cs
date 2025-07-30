@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    public bool circle = false;
     public enemyDetect d;
     public GameObject enemy;
     public bool wait = false;
@@ -42,11 +43,21 @@ public class Bullet : MonoBehaviour
         }
         if (homming && spellform.enemies)
         {
-            GameObject player = GameObject.Find("Player");
-            Vector3 perpendicular = transform.position - player.transform.position;
-            Quaternion endRotation = Quaternion.LookRotation(Vector3.forward * Time.deltaTime, perpendicular);
+            if(circle && spellform.summoner != null)
+            {
+               
+                Vector3 perpendicular = transform.position - spellform.summoner.transform.position;
+                Quaternion endRotation = Quaternion.LookRotation(Vector3.forward * Time.deltaTime, perpendicular);
+                transform.rotation = Quaternion.Slerp(transform.rotation, endRotation, Time.deltaTime);
+            }
+            else
+            {
+                GameObject player = GameObject.Find("Player");
+                Vector3 perpendicular = transform.position - player.transform.position;
+                Quaternion endRotation = Quaternion.LookRotation(Vector3.forward * Time.deltaTime, perpendicular);
+                transform.rotation = Quaternion.Slerp(transform.rotation, endRotation, Time.deltaTime);
+            }
 
-            transform.rotation = Quaternion.Slerp(transform.rotation, endRotation, Time.deltaTime);
         }
         else
         {
