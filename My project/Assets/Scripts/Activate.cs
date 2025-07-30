@@ -6,6 +6,8 @@ using ColorUtility = UnityEngine.ColorUtility;
 
 public class Activate : MonoBehaviour
 {
+    public float dt = 0;
+    public CameraSize c;
     string hex = "#675436";
     public bool hell = false;
     public List<GameObject> g = new List<GameObject>();
@@ -29,6 +31,10 @@ public class Activate : MonoBehaviour
         }
         if(collision.tag == "Player")
         {
+            if(dt != 0)
+            {
+                c.size = dt;
+            }
             for(int i = 0; i < g.Count; i++)
             {
                 g[i].SetActive(true);

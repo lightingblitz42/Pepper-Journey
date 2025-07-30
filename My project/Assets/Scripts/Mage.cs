@@ -28,7 +28,7 @@ public class Mage : Enemy
         }
         if (!manual)
         {
-            attackMax = Random.Range(.3f, 3);
+            attackMax = Random.Range(.8f, 3);
             if (Random.value > .6f)
             {
                 Spells.Add(stageMaker.Modifiers[Random.Range(0, stageMaker.Modifiers.Count - 1)]);

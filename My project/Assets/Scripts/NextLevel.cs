@@ -22,7 +22,7 @@ public class NextLevel : MonoBehaviour
         if(blackScreen > 0 || ne == -1)
         {
             blackSc.color = new Color(0, 0, 0, blackScreen);
-            blackScreen -= Time.deltaTime * ne * 2;
+            blackScreen -= Time.deltaTime * ne * 1.5f;
             if(blackScreen > 1 && teleported == false)
             {
                 g.transform.position = goTo.position;

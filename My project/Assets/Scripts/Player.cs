@@ -8,9 +8,12 @@ using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.U2D;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
+    public Slider sl;
+    public Shoot s;
     public SpellLetters org;
     public List<SpellLetters> SpellLetterss = new List<SpellLetters>();
     public SpellLetters SwichRune;
@@ -43,12 +46,14 @@ public class Player : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        sl.maxValue = health;
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        sl.value = health;
         if (Input.GetKeyUp(KeyCode.E) && invbuttons.activeSelf && inv.activeSelf)
         {
             inv.SetActive(false);
@@ -231,6 +236,7 @@ public class Player : MonoBehaviour
         SpellLetterss[num].SpriteRenderer.sprite = SwichRune.SpriteRenderer.sprite;
         SpellLetterss[num].SpriteRenderer.color = SwichRune.SpriteRenderer.color;
         SpellLetterss[num].Spell = org.Spell;
+        s.Spells[num] = org.Spell;
 
         org.SpriteRenderer.sprite = spriteRendererHold;
         org.SpriteRenderer.color = c;

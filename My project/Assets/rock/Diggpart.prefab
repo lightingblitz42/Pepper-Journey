@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3999814776538050111}
   - component: {fileID: 6117344750397122285}
   - component: {fileID: 1635811926418481144}
+  - component: {fileID: -7282118858634840488}
   m_Layer: 0
   m_Name: Diggpart
   m_TagString: Untagged
@@ -4833,3 +4834,16 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!114 &-7282118858634840488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4039944839316694022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8b62b21eecbc59489ec866a2f55a48b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerr: 3

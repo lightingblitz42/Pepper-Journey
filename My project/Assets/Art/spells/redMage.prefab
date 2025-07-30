@@ -249,7 +249,7 @@ MonoBehaviour:
   HurtText: {fileID: 174013435241155245, guid: 4a614189384a4014098e3d16f6de1fbd, type: 3}
   deathAnim: {fileID: 4242351963343379969, guid: 8e9fca8bb178ddd4e94d1a5e02746ac1, type: 3}
   animator: {fileID: 8638098559325865904}
-  Health: 15
+  Health: 45
   ed: {fileID: 3142107775405755810}
   rb: {fileID: 8475594458374782837}
   speed: 3
@@ -362,8 +362,8 @@ MonoBehaviour:
   deathAnim: {fileID: 4242351963343379969, guid: 8e9fca8bb178ddd4e94d1a5e02746ac1, type: 3}
   animator: {fileID: 8356586059839846994, guid: bf88da35c6978d74eaa11b8a85ddd894, type: 3}
   Health: 15
-  ed: {fileID: 3423646384285233216, guid: bf88da35c6978d74eaa11b8a85ddd894, type: 3}
-  rb: {fileID: 4048068891389243295, guid: bf88da35c6978d74eaa11b8a85ddd894, type: 3}
+  ed: {fileID: 3142107775405755810}
+  rb: {fileID: 8475594458374782837}
   speed: 3
   attckTimer: 4
   attackMax: 4
@@ -374,10 +374,7 @@ MonoBehaviour:
   basesling: {fileID: 8181188094188421446}
   spellSling: {fileID: 6857481860843297401}
   currentShot: 0
-  Spells:
-  - {fileID: 590329826235726023, guid: e7e7f29ecfff9a94685e0afcc014e6af, type: 3}
-  - {fileID: 590329826235726023, guid: e7e7f29ecfff9a94685e0afcc014e6af, type: 3}
-  - {fileID: 590329826235726023, guid: e7e7f29ecfff9a94685e0afcc014e6af, type: 3}
+  Spells: []
   spellsPerShot: 1
   Charge: 1
 --- !u!1 &8181188094188421446
@@ -551,8 +548,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.08073985, y: 0}
-  m_Radius: 3.4472005
+  m_Offset: {x: 0.0114474455, y: 0}
+  m_Radius: 1.4574978
 --- !u!95 &8638098559325865904 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 3456007081982604669, guid: 8e9fca8bb178ddd4e94d1a5e02746ac1, type: 3}
