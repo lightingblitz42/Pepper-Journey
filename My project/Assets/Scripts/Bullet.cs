@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    public enemyDetect d;
+    public GameObject enemy;
     public bool wait = false;
     public bool homming = false;  
     public float speed = 5;
@@ -42,9 +44,21 @@ public class Bullet : MonoBehaviour
         {
             GameObject player = GameObject.Find("Player");
             Vector3 perpendicular = transform.position - player.transform.position;
-           Quaternion endRotation = Quaternion.LookRotation(Vector3.forward * Time.deltaTime, perpendicular);
+            Quaternion endRotation = Quaternion.LookRotation(Vector3.forward * Time.deltaTime, perpendicular);
 
             transform.rotation = Quaternion.Slerp(transform.rotation, endRotation, Time.deltaTime);
+        }
+        else
+        {
+            if (homming)
+            {
+                if (d != null && d.Enemy != null)
+                {
+                Vector3 perpendicular = transform.position - d.Enemy.transform.position;
+                Quaternion endRotation = Quaternion.LookRotation(Vector3.forward * Time.deltaTime, perpendicular);
+                }
+                
+            }
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)

@@ -472,7 +472,21 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      mushroom-Sheet_0: 7150177003367952109
+      mushroom-Sheet_1: 2962269529975663843
+      mushroom-Sheet_10: 403314210869392375
+      mushroom-Sheet_11: -7895532705944718831
+      mushroom-Sheet_12: -4242058795439286055
+      mushroom-Sheet_13: 7789326504491962762
+      mushroom-Sheet_2: -3554738306306754925
+      mushroom-Sheet_3: -5365012506515895340
+      mushroom-Sheet_4: 5291444809183991771
+      mushroom-Sheet_5: 4579195614926573439
+      mushroom-Sheet_6: -7270218272548270926
+      mushroom-Sheet_7: -7994111146687064750
+      mushroom-Sheet_8: -3289642396251528374
+      mushroom-Sheet_9: 1091443503293310475
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

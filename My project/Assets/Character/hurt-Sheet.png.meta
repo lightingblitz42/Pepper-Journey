@@ -422,7 +422,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      hurt-Sheet_0: -2234448401082422136
+      hurt-Sheet_1: -1163106225867831535
+      hurt-Sheet_10: 8272040852175828600
+      hurt-Sheet_11: 3366939391536820855
+      hurt-Sheet_2: -866813170116762439
+      hurt-Sheet_3: 3508764824291931802
+      hurt-Sheet_4: -9022551605808697461
+      hurt-Sheet_5: -2187991746555519880
+      hurt-Sheet_6: -4086969320042176518
+      hurt-Sheet_7: 6467470071157682967
+      hurt-Sheet_8: -5881736515848440434
+      hurt-Sheet_9: 236546362960012495
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

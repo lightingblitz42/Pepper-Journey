@@ -1522,7 +1522,63 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      FireGuy-Sheet_0: -9123882208873312523
+      FireGuy-Sheet_1: 5271695195763650155
+      FireGuy-Sheet_10: 946321082317008643
+      FireGuy-Sheet_11: 5249521547304229831
+      FireGuy-Sheet_12: -3062945408340018066
+      FireGuy-Sheet_13: -2013535321567871219
+      FireGuy-Sheet_14: 1359727840825871005
+      FireGuy-Sheet_15: 6229768977705205375
+      FireGuy-Sheet_16: 2285659455763729635
+      FireGuy-Sheet_17: 4981005904594943600
+      FireGuy-Sheet_18: 2855706498254730752
+      FireGuy-Sheet_19: 987413711728588394
+      FireGuy-Sheet_2: 4081620021079161350
+      FireGuy-Sheet_20: 1532201848025553880
+      FireGuy-Sheet_21: 5348863071570692636
+      FireGuy-Sheet_22: -7712514175410895213
+      FireGuy-Sheet_23: -9169120512104629763
+      FireGuy-Sheet_24: -8244192947158904953
+      FireGuy-Sheet_25: 4356120601189270369
+      FireGuy-Sheet_26: 8559129945195221449
+      FireGuy-Sheet_27: -8869337921651774743
+      FireGuy-Sheet_28: -245910609095452337
+      FireGuy-Sheet_29: 5391819485839887732
+      FireGuy-Sheet_3: -8757445139652514596
+      FireGuy-Sheet_30: 5166549523130159745
+      FireGuy-Sheet_31: 123040109551855861
+      FireGuy-Sheet_32: 2483325128162071389
+      FireGuy-Sheet_33: 4148229111874404960
+      FireGuy-Sheet_34: -8539861964374150419
+      FireGuy-Sheet_35: -8316070702695983428
+      FireGuy-Sheet_36: -4017374007074955260
+      FireGuy-Sheet_37: 9216109886804148139
+      FireGuy-Sheet_38: -2384512135732259399
+      FireGuy-Sheet_39: -4929885140794736565
+      FireGuy-Sheet_4: -5223111440476714701
+      FireGuy-Sheet_40: -3024916256025348806
+      FireGuy-Sheet_41: -3358484731096691702
+      FireGuy-Sheet_42: 3363391488588443810
+      FireGuy-Sheet_43: -9221365248692570969
+      FireGuy-Sheet_44: -847785883531473095
+      FireGuy-Sheet_45: 1821875496738071561
+      FireGuy-Sheet_46: -5943168600995224790
+      FireGuy-Sheet_47: 2835251384941157866
+      FireGuy-Sheet_48: -3387950284993712712
+      FireGuy-Sheet_49: 769940507638201222
+      FireGuy-Sheet_5: -5477702828722749473
+      FireGuy-Sheet_50: -4031243058354038648
+      FireGuy-Sheet_51: -6494208128209935565
+      FireGuy-Sheet_52: 2571077059920340483
+      FireGuy-Sheet_53: 1598838279112976294
+      FireGuy-Sheet_54: 7435675017364911135
+      FireGuy-Sheet_55: -5123396721917402626
+      FireGuy-Sheet_6: -3663538528503878003
+      FireGuy-Sheet_7: 6762694813337984462
+      FireGuy-Sheet_8: 1738635519470688365
+      FireGuy-Sheet_9: -2637411884169284097
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
