@@ -8,7 +8,7 @@ public class enemyDetect : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.tag == "Enemy" && !called)
+        if (!called && collision.tag != "Finish")
         {
             Enemy = collision.gameObject;
             called = true;

@@ -54,8 +54,9 @@ public class Bullet : MonoBehaviour
             {
                 if (d != null && d.Enemy != null)
                 {
-                Vector3 perpendicular = transform.position - d.Enemy.transform.position;
-                Quaternion endRotation = Quaternion.LookRotation(Vector3.forward * Time.deltaTime, perpendicular);
+                    Vector3 perpendicular = transform.position - d.Enemy.transform.position;
+                    Quaternion endRotation = Quaternion.LookRotation(Vector3.forward * Time.deltaTime, perpendicular);
+                    transform.rotation = Quaternion.Slerp(transform.rotation, endRotation, Time.deltaTime * 4);
                 }
                 
             }
