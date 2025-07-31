@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Slime : Enemy
 {
+    public GameObject Heal;
     public bool King = false;
     public float scalePlus = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -37,6 +38,10 @@ public class Slime : Enemy
                 StartCoroutine(Attack());
                 attckTimer = attackMax;
             }
+        }
+        if (King && Health <= 0)
+        {
+            Instantiate(Heal, transform.position, Quaternion.identity);
         }
         base.Update();
     }

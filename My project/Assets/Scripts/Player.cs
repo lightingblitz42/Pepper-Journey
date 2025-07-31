@@ -53,6 +53,11 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKey(KeyCode.L))
+        {
+            animator.SetBool("Drinking", true);
+            StartCoroutine(ddd());
+        }
         sl.value = health;
         if (Input.GetKeyUp(KeyCode.E) && invbuttons.activeSelf && inv.activeSelf)
         {
@@ -161,6 +166,11 @@ public class Player : MonoBehaviour
             }
         }
        
+    }
+    public IEnumerator ddd()
+    {
+        yield return new WaitForSeconds(.2f);
+        animator.SetBool("Drinking", false);
     }
     public void startedd()
     {
