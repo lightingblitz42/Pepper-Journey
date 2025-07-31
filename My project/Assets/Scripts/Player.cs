@@ -3,6 +3,7 @@ using NUnit.Framework;
 using NUnit.Framework.Constraints;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEditor.Build.Content;
 using UnityEditor.SearchService;
 using UnityEngine;
@@ -12,6 +13,9 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
+    public GameObject textMan;
+    public TextMeshProUGUI text;
+
     public Slider sl;
     public Shoot s;
     public SpellLetters org;
@@ -55,8 +59,7 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.L))
         {
-            animator.SetBool("Drinking", true);
-            StartCoroutine(ddd());
+            //spawn a guy that drinks ontop of character
         }
         sl.value = health;
         if (Input.GetKeyUp(KeyCode.E) && invbuttons.activeSelf && inv.activeSelf)
@@ -134,7 +137,7 @@ public class Player : MonoBehaviour
 
 
 
-            if (!dashing)
+            if (!dashing && textMan.activeSelf == false)
             {
                 animator.SetBool("Running", false);
                 if (Input.GetKey(KeyCode.A))
@@ -166,11 +169,6 @@ public class Player : MonoBehaviour
             }
         }
        
-    }
-    public IEnumerator ddd()
-    {
-        yield return new WaitForSeconds(.2f);
-        animator.SetBool("Drinking", false);
     }
     public void startedd()
     {
@@ -236,6 +234,29 @@ public class Player : MonoBehaviour
                 rb.linearVelocity = new Vector2(rb.linearVelocityX, dashspeed * 8 * dir);
             }
         }
+    }
+    public IEnumerator tex(string s)
+    {
+        textMan.SetActive(true);
+        text.text = "";
+        
+        for(int i = 0; i< s.Length; i++)
+        {
+            yield return new WaitForSeconds(.05f);
+            text.text += s[i];
+            if (Input.GetKey(KeyCode.Mouse0))
+            {
+                text.text = s;
+                break;
+            }
+        }
+        if (Input.GetKey(KeyCode.Mouse0))
+        {
+            text.text = "";
+            textMan.SetActive(false);
+        }
+
+
     }
     public void Switch(int num)
     {

@@ -6,6 +6,7 @@ using ColorUtility = UnityEngine.ColorUtility;
 
 public class Activate : MonoBehaviour
 {
+    public string text;
     public float dt = 0;
     public CameraSize c;
     string hex = "#675436";
@@ -25,6 +26,11 @@ public class Activate : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if(text.Length > 1)
+        {
+            collision.GetComponent<Player>().StartCoroutine(collision.GetComponent<Player>().tex(text));
+            Destroy(gameObject);
+        }
         if (hell && ColorUtility.TryParseHtmlString("#675034", out Color myColor) && collision.tag == "Player")
         {
             Camera.main.backgroundColor = myColor;
