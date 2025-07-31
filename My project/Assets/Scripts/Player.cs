@@ -13,6 +13,7 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
+    public bool message = false;
     public GameObject textMan;
     public TextMeshProUGUI text;
 
@@ -57,6 +58,11 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(!message && Input.GetKeyDown(KeyCode.Mouse0))
+        {
+                text.text = "";
+                textMan.SetActive(false);
+        }
         if (Input.GetKey(KeyCode.L))
         {
             //spawn a guy that drinks ontop of character
@@ -237,6 +243,7 @@ public class Player : MonoBehaviour
     }
     public IEnumerator tex(string s)
     {
+        message = true;
         textMan.SetActive(true);
         text.text = "";
         
@@ -244,17 +251,14 @@ public class Player : MonoBehaviour
         {
             yield return new WaitForSeconds(.05f);
             text.text += s[i];
-            if (Input.GetKey(KeyCode.Mouse0))
+            if (Input.GetKeyDown(KeyCode.Mouse0))
             {
                 text.text = s;
+                yield return new WaitForSeconds(.05f);
                 break;
             }
         }
-        if (Input.GetKey(KeyCode.Mouse0))
-        {
-            text.text = "";
-            textMan.SetActive(false);
-        }
+        message = false;
 
 
     }

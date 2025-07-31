@@ -163,7 +163,7 @@ MonoBehaviour:
   enemy: {fileID: 0}
   wait: 0
   homming: 1
-  speed: 32.5
+  speed: 350
   rb: {fileID: 3706599697264230049}
   damage: 4.16
   DeathEffect: {fileID: 3463899743056143623, guid: 5fc02ce629955124d83f455279a09e93, type: 3}
