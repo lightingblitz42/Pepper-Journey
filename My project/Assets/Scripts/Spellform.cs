@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Spellform : MonoBehaviour
 {
+    public GameObject da;
     public bool spawnWhileAlive = false;
     public bool col = true;
 
@@ -36,6 +37,11 @@ public class Spellform : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        if(da != null)
+        {
+
+            Instantiate(da, transform.position, Quaternion.identity);
+        }
         if (dig)
         {
             diggg();

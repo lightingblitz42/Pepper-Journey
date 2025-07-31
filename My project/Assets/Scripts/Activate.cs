@@ -7,6 +7,7 @@ using ColorUtility = UnityEngine.ColorUtility;
 
 public class Activate : MonoBehaviour
 {
+    public float dd = -1;
     public GameObject bossally;
     public bool read = false;
     public bool sign = false;
@@ -47,6 +48,12 @@ public class Activate : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if(dd != -1 && collision.tag == "Player")
+        {
+            Camera.main.GetComponent<CameraManager>().audioSource.resource = Camera.main.GetComponent<CameraManager>().d[(int)dd];
+            Camera.main.GetComponent<CameraManager>().audioSource.Play();
+            Destroy(gameObject);
+        }
         if(bossally != null && collision.tag == "Player")
         {
             Instantiate(bossally, new Vector3(transform.position.x, transform.position.y + 15), Quaternion.identity);
