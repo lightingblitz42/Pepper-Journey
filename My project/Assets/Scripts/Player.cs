@@ -13,6 +13,7 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
+    public GameObject DeathScrene;
     public bool message = false;
     public GameObject textMan;
     public TextMeshProUGUI text;
@@ -73,7 +74,7 @@ public class Player : MonoBehaviour
             inv.SetActive(false);
             invbuttons.SetActive(false);
         }
-        if(health <= 0)
+        if(health <= (sl.maxValue/5) * 4)
         {
             StartCoroutine(death());
         }
@@ -183,6 +184,7 @@ public class Player : MonoBehaviour
     }
     public IEnumerator death()
     {
+        DeathScrene.SetActive(true);
         yield return new WaitForSeconds(5);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
@@ -216,10 +218,10 @@ public class Player : MonoBehaviour
     public IEnumerator Digging()
     {
         digging = true;
-        transform.GetComponent<BoxCollider2D>().enabled = false;
+        //transform.GetComponent<BoxCollider2D>().enabled = false;
         Instantiate(DiggerParts, transform.root, false);
         yield return new WaitForSeconds(2);
-        transform.GetComponent<BoxCollider2D>().enabled = true;
+        //transform.GetComponent<BoxCollider2D>().enabled = true;
         digging = false;
     }
     public void Dash()

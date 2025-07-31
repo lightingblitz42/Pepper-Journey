@@ -22,6 +22,7 @@ public class Spellform : MonoBehaviour
 
     public bool prongMod = false;
 
+    public bool ally = false;
     public bool enemies = false;
     public bool spawnOnPlayer = false;
     public bool shake = false;
@@ -100,6 +101,7 @@ public class Spellform : MonoBehaviour
             }
             sf.spawnOnPlayer = false;
             sf.enemies = enemies;
+            sf.ally = ally;
             if (sf.prongMod)
             {
                // go.RemoveAt(0);

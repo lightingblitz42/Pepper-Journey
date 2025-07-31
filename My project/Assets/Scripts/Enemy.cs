@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    public GameObject win;
     public bool immune = false;
 
     public float healthBefore;
@@ -59,6 +60,10 @@ public class Enemy : MonoBehaviour
     }
     public void Death()
     {
+        if(win != null)
+        {
+            win.SetActive(true);
+        }
         GameObject ded = Instantiate(deathAnim,transform.position, Quaternion.identity);
         ded.transform.localScale = transform.localScale;
         Destroy(gameObject);

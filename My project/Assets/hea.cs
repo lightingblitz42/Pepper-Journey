@@ -18,6 +18,8 @@ public class hea : MonoBehaviour
         if(collision.tag == "Player")
         {
             collision.GetComponent<Player>().health = collision.GetComponent<Player>().sl.maxValue;
+            Destroy(gameObject);
         }
+       
     }
 }

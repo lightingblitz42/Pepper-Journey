@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class enemyDetection : MonoBehaviour
 {
+    public bool ally = false;
     public float detectedFor = 0;
     public GameObject Player;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -17,10 +18,21 @@ public class enemyDetection : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (ally)
         {
-            Player = collision.gameObject;
-            detectedFor = 1;
+            if (collision.tag == "Enemy")
+            {
+                Player = collision.gameObject;
+                detectedFor = 1;
+            }
+        }
+        else
+        {
+            if (collision.tag == "Player")
+            {
+                Player = collision.gameObject;
+                detectedFor = 1;
+            }
         }
     }
 }

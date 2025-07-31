@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class Mage : Enemy
 {
+    public bool ally = false;
     public bool manual = false;
     public float tie = 0;
 
@@ -112,7 +113,14 @@ public class Mage : Enemy
         Spellform sp = spellzz.GetComponent<Spellform>();
         if(sp != null)
         {
-            sp.enemies = true;
+            if(ally == false)
+            {
+                sp.enemies = true;
+            }
+            else
+            {
+                sp.ally = true;
+            }
             if (sp.prongMod)
             {
                 count++;

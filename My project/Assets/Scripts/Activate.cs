@@ -1,3 +1,4 @@
+using Microsoft.Unity.VisualStudio.Editor;
 using NUnit.Framework;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -6,6 +7,12 @@ using ColorUtility = UnityEngine.ColorUtility;
 
 public class Activate : MonoBehaviour
 {
+    public GameObject bossally;
+    public bool read = false;
+    public bool sign = false;
+    public GameObject mage11;
+    public GameObject mage22;
+    public bool mage2 = false;
     public string text;
     public float dt = 0;
     public CameraSize c;
@@ -24,12 +31,46 @@ public class Activate : MonoBehaviour
     {
         
     }
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (text.Length > 1)
+        {
+            if (sign)
+            {
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    collision.GetComponent<Player>().StartCoroutine(collision.GetComponent<Player>().tex(text));
+                    read = true;
+                }
+            }
+        }
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if(bossally != null && collision.tag == "Player")
+        {
+            Instantiate(bossally, new Vector3(transform.position.x, transform.position.y + 15), Quaternion.identity);
+            Destroy(gameObject);
+        }
         if(text.Length > 1)
         {
-            collision.GetComponent<Player>().StartCoroutine(collision.GetComponent<Player>().tex(text));
-            Destroy(gameObject);
+            if (sign)
+            {
+                if (Input.GetKey(KeyCode.E))
+                {
+                    collision.GetComponent<Player>().StartCoroutine(collision.GetComponent<Player>().tex(text));
+                }
+            }
+            else
+            {
+                collision.GetComponent<Player>().StartCoroutine(collision.GetComponent<Player>().tex(text));
+                if (mage2)
+                {
+                    mage11.SetActive(false);
+                    mage22.SetActive(true);
+                }
+                Destroy(gameObject);
+            }
         }
         if (hell && ColorUtility.TryParseHtmlString("#675034", out Color myColor) && collision.tag == "Player")
         {

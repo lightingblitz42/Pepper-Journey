@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Slime : Enemy
 {
+    public GameObject wall;
     public GameObject Heal;
     public bool King = false;
     public float scalePlus = 0;
@@ -41,6 +42,7 @@ public class Slime : Enemy
         }
         if (King && Health <= 0)
         {
+            Destroy(wall);
             Instantiate(Heal, transform.position, Quaternion.identity);
         }
         base.Update();

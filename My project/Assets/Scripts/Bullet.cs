@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    public GameObject lavaboss;
     public bool circle = false;
     public enemyDetect d;
     public GameObject enemy;
