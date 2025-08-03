@@ -1,10 +1,8 @@
-using NUnit.Framework;
+
 using System.Collections.Generic;
-using Unity.Hierarchy;
-using Unity.VisualScripting;
-using UnityEditor.Experimental.GraphView;
+
 using UnityEngine;
-using static UnityEngine.Analytics.IAnalytic;
+
 
 
 public class Shoot : MonoBehaviour

@@ -1,7 +1,5 @@
-using Microsoft.Unity.VisualStudio.Editor;
-using NUnit.Framework;
+
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using ColorUtility = UnityEngine.ColorUtility;
 

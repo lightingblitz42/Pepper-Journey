@@ -1,14 +1,10 @@
-using NUnit;
-using NUnit.Framework;
-using NUnit.Framework.Constraints;
+
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using UnityEditor.Build.Content;
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.U2D;
+
 using UnityEngine.UI;
 
 public class Player : MonoBehaviour
